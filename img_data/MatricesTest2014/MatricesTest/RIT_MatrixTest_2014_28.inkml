@@ -1,0 +1,151 @@
+<ink xmlns="http://www.w3.org/2003/InkML">
+<traceFormat>
+    <channel name="X" type="decimal"/>
+    <channel name="Y" type="decimal"/>
+</traceFormat>
+<annotation type="truth">$ A = \begin {pmatrix} 2 &amp; 1 \\ - 1 &amp; 3 \end {pmatrix} $</annotation>
+<annotation type="writer">annot_335</annotation>
+<annotation type="UI">CROHME_2014_MATRICE_RIT_28</annotation>
+<annotation type="copyright">RIT_2014</annotation>
+<annotationXML type="truth" encoding="Content-MathML">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+            <mi xml:id="10:11:">A</mi>
+            <mrow >
+                <mo  xml:id = "12:13:" >=</mo>
+                <mrow >
+                    <mo  xml:id = "14:" >(</mo>
+                    <mrow >
+                        <mtable>
+                            <mtr>
+                                <mtd>
+                                    <mn  xml:id = "15:" >2</mn>
+                                </mtd>
+                                <mtd>
+                                    <mn  xml:id = "18:" >1</mn>
+                                </mtd>
+                            </mtr>
+                            <mtr>
+                                <mtd>
+                                    <mrow >
+                                        <mo  xml:id = "16:" >-</mo>
+                                        <mn  xml:id = "17:" >1</mn>
+                                    </mrow>
+                                </mtd>
+                                <mtd>
+                                    <mn  xml:id = "19:" >3</mn>
+                                </mtd>
+                            </mtr>
+                        </mtable>
+                        <mo  xml:id = "20:" >)</mo>
+                    </mrow>
+                </mrow>
+            </mrow>
+        </mrow>
+    </math>
+</annotationXML>
+
+<trace  id = "0" >
+107 354, 109 349, 112 336, 117 321, 124 301, 133 278, 140 257, 145 242, 148 230, 152 221, 154 214, 158 207, 163 203, 167 201, 171 200, 176 202, 179 209, 183 221, 187 239, 192 258, 197 277, 203 298, 210 316, 216 331, 220 341, 223 349, 224 353
+</trace>
+
+<trace  id = "1" >
+119 292, 125 290, 134 290, 148 290, 162 289, 176 288, 189 287, 200 286
+</trace>
+
+<trace  id = "2" >
+268 255, 272 253, 280 253, 287 253, 298 253, 308 253, 313 253
+</trace>
+
+<trace  id = "3" >
+273 292, 278 292, 286 292, 296 292
+</trace>
+
+<trace  id = "4" >
+433 90, 428 93, 422 100, 413 114, 404 133, 395 153, 387 175, 381 200, 375 227, 371 254, 370 281, 370 311, 374 341, 382 370, 391 401, 404 434, 420 464
+</trace>
+
+<trace  id = "5" >
+473 171, 464 169, 462 169, 461 168, 461 165, 467 158, 477 154, 486 153, 498 153, 507 161, 513 170, 514 181, 514 196, 507 211, 498 223, 491 231, 487 236, 486 239, 489 239, 503 239, 521 239, 534 239, 549 236, 558 235
+</trace>
+
+<trace  id = "6" >
+426 373, 426 374, 432 374, 440 373, 451 372, 462 371, 472 370
+</trace>
+
+<trace  id = "7" >
+521 334, 518 336, 518 344, 517 356, 517 376, 517 397, 517 417, 518 434, 521 449
+</trace>
+
+<trace  id = "8" >
+680 115, 678 115, 678 127, 678 142, 678 164, 678 183, 679 200
+</trace>
+
+<trace  id = "9" >
+641 320, 645 315, 652 313, 661 313, 673 314, 680 319, 684 325, 685 335, 683 346, 673 357, 664 365, 656 372, 652 375, 650 376, 652 376, 660 376, 670 376, 683 377, 690 380, 696 385, 698 391, 699 400, 694 413, 679 426, 664 434, 645 441, 625 443, 605 438
+</trace>
+
+<trace  id = "10" >
+751 63, 761 69, 771 81, 786 101, 801 122, 814 146, 825 175, 831 208, 831 241, 828 274, 816 310, 796 346, 772 382, 746 418, 723 453, 703 488
+</trace>
+
+<traceGroup xml:id="-- Segmentation Data --">
+    <annotation type="truth">Segmentation</annotation>
+
+    <traceGroup xml:id="10:11:">
+        <annotation type="truth">A</annotation>
+        <traceView traceDataRef="0"/>
+        <traceView traceDataRef="1"/>
+        <annotationXML href="10:11:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="12:13:">
+        <annotation type="truth">=</annotation>
+        <traceView traceDataRef="2"/>
+        <traceView traceDataRef="3"/>
+        <annotationXML href="12:13:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="14:">
+        <annotation type="truth">(</annotation>
+        <traceView traceDataRef="4"/>
+        <annotationXML href="14:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="15:">
+        <annotation type="truth">2</annotation>
+        <traceView traceDataRef="5"/>
+        <annotationXML href="15:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="16:">
+        <annotation type="truth">-</annotation>
+        <traceView traceDataRef="6"/>
+        <annotationXML href="16:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="17:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="7"/>
+        <annotationXML href="17:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="18:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="8"/>
+        <annotationXML href="18:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="19:">
+        <annotation type="truth">3</annotation>
+        <traceView traceDataRef="9"/>
+        <annotationXML href="19:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="20:">
+        <annotation type="truth">)</annotation>
+        <traceView traceDataRef="10"/>
+        <annotationXML href="20:"/>
+    </traceGroup>
+</traceGroup>
+</ink>

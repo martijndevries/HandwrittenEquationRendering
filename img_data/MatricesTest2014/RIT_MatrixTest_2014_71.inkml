@@ -1,0 +1,635 @@
+<ink xmlns="http://www.w3.org/2003/InkML">
+<traceFormat>
+    <channel name="X" type="decimal"/>
+    <channel name="Y" type="decimal"/>
+</traceFormat>
+<annotation type="truth">$ (T - 3 I) ^ {2} = \begin {pmatrix} 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \end {pmatrix} = \begin {pmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 1 &amp; 0 &amp; 0 \end {pmatrix} $</annotation>
+<annotation type="writer">annot_385</annotation>
+<annotation type="UI">CROHME_2014_MATRICE_RIT_71</annotation>
+<annotation type="copyright">RIT_2014</annotation>
+<annotationXML type="truth" encoding="Content-MathML">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+            <mo xml:id="30:">(</mo>
+            <mrow >
+                <mi  xml:id = "31:32:33:" >T</mi>
+                <mrow >
+                    <mo  xml:id = "34:" >-</mo>
+                    <mrow >
+                        <mn  xml:id = "35:" >3</mn>
+                        <mrow >
+                            <mi  xml:id = "36:37:38:" >I</mi>
+                            <mrow >
+                                <msup >
+                                    <mo  xml:id = "39:" >)</mo>
+                                    <mn  xml:id = "40:" >2</mn>
+                                </msup>
+                                <mrow >
+                                    <mo  xml:id = "42:43:" >=</mo>
+                                    <mrow >
+                                        <mo  xml:id = "44:" >(</mo>
+                                        <mrow >
+                                            <mtable>
+                                                <mtr>
+                                                    <mtd>
+                                                        <mn  xml:id = "45:" >0</mn>
+                                                    </mtd>
+                                                    <mtd>
+                                                        <mn  xml:id = "46:" >0</mn>
+                                                    </mtd>
+                                                    <mtd>
+                                                        <mn  xml:id = "47:" >0</mn>
+                                                    </mtd>
+                                                </mtr>
+                                                <mtr>
+                                                    <mtd>
+                                                        <mn  xml:id = "48:" >1</mn>
+                                                    </mtd>
+                                                    <mtd>
+                                                        <mn  xml:id = "49:" >0</mn>
+                                                    </mtd>
+                                                    <mtd>
+                                                        <mn  xml:id = "50:51:" >0</mn>
+                                                    </mtd>
+                                                </mtr>
+                                                <mtr>
+                                                    <mtd>
+                                                        <mn  xml:id = "52:" >0</mn>
+                                                    </mtd>
+                                                    <mtd>
+                                                        <mn  xml:id = "53:" >1</mn>
+                                                    </mtd>
+                                                    <mtd>
+                                                        <mn  xml:id = "54:" >0</mn>
+                                                    </mtd>
+                                                </mtr>
+                                            </mtable>
+                                            <mrow >
+                                                <mo  xml:id = "55:" >)</mo>
+                                                <mrow >
+                                                    <mo  xml:id = "56:" >(</mo>
+                                                    <mrow >
+                                                        <mtable>
+                                                            <mtr>
+                                                                <mtd>
+                                                                    <mn  xml:id = "57:" >0</mn>
+                                                                </mtd>
+                                                                <mtd>
+                                                                    <mn  xml:id = "58:" >0</mn>
+                                                                </mtd>
+                                                                <mtd>
+                                                                    <mn  xml:id = "59:" >0</mn>
+                                                                </mtd>
+                                                            </mtr>
+                                                            <mtr>
+                                                                <mtd>
+                                                                    <mn  xml:id = "60:" >1</mn>
+                                                                </mtd>
+                                                                <mtd>
+                                                                    <mn  xml:id = "61:" >0</mn>
+                                                                </mtd>
+                                                                <mtd>
+                                                                    <mn  xml:id = "62:" >0</mn>
+                                                                </mtd>
+                                                            </mtr>
+                                                            <mtr>
+                                                                <mtd>
+                                                                    <mn  xml:id = "63:" >0</mn>
+                                                                </mtd>
+                                                                <mtd>
+                                                                    <mn  xml:id = "64:" >1</mn>
+                                                                </mtd>
+                                                                <mtd>
+                                                                    <mn  xml:id = "65:" >0</mn>
+                                                                </mtd>
+                                                            </mtr>
+                                                        </mtable>
+                                                        <mrow >
+                                                            <mo  xml:id = "66:" >)</mo>
+                                                            <mrow >
+                                                                <munder >
+                                                                    <mo  xml:id = "67:" >-</mo>
+                                                                    <mo  xml:id = "68:" >-</mo>
+                                                                </munder>
+                                                                <mrow >
+                                                                    <mo  xml:id = "69:" >(</mo>
+                                                                    <mrow >
+                                                                        <mtable>
+                                                                            <mtr>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "70:" >0</mn>
+                                                                                </mtd>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "71:" >0</mn>
+                                                                                </mtd>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "72:" >0</mn>
+                                                                                </mtd>
+                                                                            </mtr>
+                                                                            <mtr>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "73:" >0</mn>
+                                                                                </mtd>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "74:" >0</mn>
+                                                                                </mtd>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "75:" >0</mn>
+                                                                                </mtd>
+                                                                            </mtr>
+                                                                            <mtr>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "76:" >1</mn>
+                                                                                </mtd>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "77:" >0</mn>
+                                                                                </mtd>
+                                                                                <mtd>
+                                                                                    <mn  xml:id = "78:" >0</mn>
+                                                                                </mtd>
+                                                                            </mtr>
+                                                                        </mtable>
+                                                                        <mo  xml:id = "79:" >)</mo>
+                                                                    </mrow>
+                                                                </mrow>
+                                                            </mrow>
+                                                        </mrow>
+                                                    </mrow>
+                                                </mrow>
+                                            </mrow>
+                                        </mrow>
+                                    </mrow>
+                                </mrow>
+                            </mrow>
+                        </mrow>
+                    </mrow>
+                </mrow>
+            </mrow>
+        </mrow>
+    </math>
+</annotationXML>
+
+<trace  id = "0" >
+34 199, 30 203, 28 206, 26 211, 23 215, 22 221, 21 225, 20 229, 20 235, 21 240, 28 247, 35 249
+</trace>
+
+<trace  id = "1" >
+54 219, 55 224, 55 227, 55 229, 55 232, 55 234, 55 235, 55 236
+</trace>
+
+<trace  id = "2" >
+34 225, 37 224, 41 224, 44 224, 48 224, 52 224
+</trace>
+
+<trace  id = "3" >
+44 219, 45 219, 48 219, 51 219, 55 219, 59 219, 61 219, 64 219, 66 219, 68 219, 70 219, 74 219
+</trace>
+
+<trace  id = "4" >
+89 231, 92 230, 94 230, 95 230, 99 230
+</trace>
+
+<trace  id = "5" >
+110 219, 114 216, 116 216, 118 216, 119 216, 121 216, 122 216, 123 216, 123 217, 123 218, 123 219, 122 219, 122 220, 123 220, 124 221, 125 222, 127 223, 128 224, 129 224, 129 225, 129 226, 129 227, 129 228, 128 228, 125 229, 124 230, 122 230, 121 230, 120 230
+</trace>
+
+<trace  id = "6" >
+152 210, 153 215, 153 217, 153 220, 153 224, 152 225, 152 227, 152 228, 152 229
+</trace>
+
+<trace  id = "7" >
+140 212, 143 212, 146 212, 148 212, 152 212, 155 212, 158 212, 161 212
+</trace>
+
+<trace  id = "8" >
+141 237, 145 235, 147 235, 149 235, 152 235, 155 235, 159 235, 167 235
+</trace>
+
+<trace  id = "9" >
+171 190, 175 190, 179 191, 183 195, 187 199, 191 205, 193 210, 194 215, 195 219, 195 226, 195 231, 192 236, 191 239, 189 241, 187 242
+</trace>
+
+<trace  id = "10" >
+198 187, 202 185, 208 185, 212 185, 216 185, 217 185, 219 185, 220 185, 220 187, 219 190, 218 191, 217 193, 217 194, 217 195, 219 196, 224 196, 229 196
+</trace>
+
+<trace  id = "11" >
+238 224, 243 224, 248 224, 255 224
+</trace>
+
+<trace  id = "12" >
+244 205, 245 205, 249 205, 251 205, 255 205, 258 205, 261 205
+</trace>
+
+<trace  id = "13" >
+308 156, 305 157, 304 163, 301 170, 297 181, 294 192, 290 205, 289 219, 288 233, 288 247, 288 258, 290 269, 296 279, 305 287, 318 295
+</trace>
+
+<trace  id = "14" >
+329 177, 323 179, 323 181, 323 185, 323 187, 324 189, 328 190, 333 190, 338 190, 340 190, 342 187, 343 185, 343 182, 343 180, 339 179, 338 178, 335 177, 340 177
+</trace>
+
+<trace  id = "15" >
+368 171, 367 175, 367 178, 367 181, 367 184, 367 187, 368 188, 372 189, 377 189, 382 188, 385 186, 387 184, 388 181, 388 180, 388 177, 384 174, 380 173, 373 172, 369 172, 367 172, 367 174
+</trace>
+
+<trace  id = "16" >
+425 171, 420 173, 420 175, 418 178, 418 181, 418 185, 420 188, 425 190, 429 190, 432 190, 435 190, 435 187, 436 183, 436 180, 435 177, 434 175, 431 175, 429 175, 426 174
+</trace>
+
+<trace  id = "17" >
+333 218, 332 221, 332 224, 331 227, 331 231, 331 234, 331 235, 332 235
+</trace>
+
+<trace  id = "18" >
+378 216, 377 219, 377 222, 377 225, 378 228, 380 230, 382 231, 386 231, 389 230, 391 229, 391 224, 391 219, 389 217, 386 216, 386 215, 385 214
+</trace>
+
+<trace  id = "19" >
+433 214, 434 218, 434 222, 434 225, 433 229, 433 232, 433 234
+</trace>
+
+<trace  id = "20" >
+440 218, 435 217, 433 218, 431 219, 429 222, 427 224, 427 228, 427 231, 427 234, 429 236, 432 237, 435 237, 438 237, 439 234, 439 231, 439 227, 439 224, 438 222, 437 220
+</trace>
+
+<trace  id = "21" >
+343 268, 339 270, 339 272, 339 274, 339 277, 343 281, 346 282, 350 284, 355 284, 360 283, 364 280, 368 276, 369 273, 370 268, 370 267, 370 266, 367 265, 366 264, 364 264, 363 264, 365 264
+</trace>
+
+<trace  id = "22" >
+407 259, 407 261, 407 264, 407 267, 406 270, 406 274, 405 277, 405 280, 405 282, 406 283
+</trace>
+
+<trace  id = "23" >
+442 265, 441 268, 441 270, 441 272, 442 274, 444 276, 445 277, 449 277, 452 276, 455 272, 457 268, 458 264, 458 261, 456 260, 453 259, 450 258, 447 258
+</trace>
+
+<trace  id = "24" >
+468 149, 470 151, 477 160, 485 171, 493 187, 501 209, 504 227, 506 242, 506 256, 506 268, 502 277, 497 284, 492 290, 489 292, 483 292
+</trace>
+
+<trace  id = "25" >
+553 144, 551 147, 550 154, 545 164, 541 175, 537 190, 535 209, 534 233, 532 254, 532 273, 533 287, 540 298, 552 305
+</trace>
+
+<trace  id = "26" >
+582 159, 580 162, 580 165, 580 167, 580 171, 580 174, 580 177, 583 179, 586 180, 591 180, 595 179, 597 173, 598 167, 598 164, 598 161, 596 159, 592 158, 590 158, 589 158
+</trace>
+
+<trace  id = "27" >
+625 166, 623 166, 623 170, 623 173, 623 177, 625 180, 639 173, 639 169, 636 165, 634 163, 631 162, 630 162, 630 163
+</trace>
+
+<trace  id = "28" >
+664 166, 664 172, 664 175, 664 179, 664 182, 666 184, 669 185, 675 185, 679 185, 683 181, 683 177, 683 171, 683 168, 678 166, 673 165, 669 165, 663 167
+</trace>
+
+<trace  id = "29" >
+568 216, 568 218, 568 220, 568 224, 568 227, 568 230, 568 233, 568 234
+</trace>
+
+<trace  id = "30" >
+624 213, 621 220, 621 224, 621 228, 622 229, 626 230, 632 230, 636 229, 638 226, 639 222, 639 218, 634 215, 630 214, 626 213, 625 213
+</trace>
+
+<trace  id = "31" >
+683 217, 679 219, 679 222, 678 224, 678 227, 678 229, 679 231, 683 232, 686 232, 689 232, 693 232, 695 230, 696 226, 696 224, 696 221, 692 220, 688 219, 684 219
+</trace>
+
+<trace  id = "32" >
+578 273, 576 274, 575 276, 574 280, 574 284, 575 288, 577 289, 581 290, 586 290, 589 289, 591 287, 592 282, 593 278, 593 274, 591 270, 589 268, 586 267, 584 266
+</trace>
+
+<trace  id = "33" >
+639 264, 639 265, 639 269, 639 273, 639 280, 639 283, 639 287, 639 291, 639 292
+</trace>
+
+<trace  id = "34" >
+683 274, 679 282, 680 286, 682 287, 684 287, 687 287, 691 287, 692 285, 692 281, 692 276, 688 272, 686 269, 683 268, 683 263
+</trace>
+
+<trace  id = "35" >
+727 140, 730 145, 736 153, 742 165, 748 181, 753 209, 756 235, 756 253, 756 265, 752 276, 748 282, 743 288, 740 292, 737 294, 735 294
+</trace>
+
+<trace  id = "36" >
+785 214, 787 214, 790 214, 792 214, 795 215
+</trace>
+
+<trace  id = "37" >
+785 230, 794 230, 802 230
+</trace>
+
+<trace  id = "38" >
+865 146, 863 148, 862 155, 856 168, 850 185, 844 200, 839 214, 834 230, 832 249, 833 270, 839 287, 848 297, 858 302
+</trace>
+
+<trace  id = "39" >
+892 165, 890 166, 889 167, 889 170, 889 173, 889 176, 891 179, 894 180, 898 180, 900 176, 900 173, 900 169, 900 166, 897 163, 894 162, 892 161, 891 161
+</trace>
+
+<trace  id = "40" >
+935 161, 931 163, 931 166, 931 170, 931 177, 932 180, 935 182, 938 183, 941 183, 943 182, 944 178, 942 173, 936 169, 931 166, 928 164, 926 163, 926 164
+</trace>
+
+<trace  id = "41" >
+971 161, 970 165, 970 170, 970 176, 970 180, 970 183, 970 185, 975 185, 978 185, 980 183, 980 176, 980 172, 978 168, 974 165, 971 163, 969 162
+</trace>
+
+<trace  id = "42" >
+886 213, 885 216, 885 220, 885 224, 885 228, 885 229, 886 230, 888 230, 892 230, 894 229, 897 227, 897 224, 897 219, 897 217, 897 214, 896 214, 892 212
+</trace>
+
+<trace  id = "43" >
+942 216, 936 218, 934 221, 933 225, 933 228, 933 229, 936 230, 941 230, 946 229, 947 227, 948 224, 948 219, 944 215, 940 214, 938 213
+</trace>
+
+<trace  id = "44" >
+977 218, 975 219, 975 221, 975 224, 975 227, 976 230, 980 233, 984 234, 986 234, 987 234, 988 230, 986 225, 982 220, 979 218, 977 217, 975 214
+</trace>
+
+<trace  id = "45" >
+891 264, 892 268, 892 271, 892 275, 892 278, 892 281, 892 282
+</trace>
+
+<trace  id = "46" >
+936 268, 935 268, 933 270, 932 273, 932 277, 932 279, 934 281, 938 281, 942 281, 946 280, 947 277, 947 273, 947 269, 946 268, 943 267, 940 266, 937 265
+</trace>
+
+<trace  id = "47" >
+980 267, 975 272, 975 274, 975 277, 975 279, 978 281, 981 282, 984 282, 985 282, 986 282, 987 282, 987 279, 985 276, 983 273, 981 272, 979 268
+</trace>
+
+<trace  id = "48" >
+1005 135, 1008 135, 1009 136, 1009 137, 1011 140, 1014 146, 1018 164, 1018 168, 1019 174, 1020 180, 1021 185, 1021 190, 1021 195, 1021 201, 1022 206, 1022 210, 1023 214, 1023 219, 1023 224, 1023 230, 1023 234, 1023 238, 1023 243, 1023 248, 1023 254, 1023 259, 1023 265, 1023 270, 1023 274, 1023 279, 1023 286, 1023 290, 1023 295, 1023 299, 1023 304, 1022 310, 1021 315, 1019 321, 1018 326, 1015 331, 1014 335, 1012 339, 1009 342, 1008 345, 1007 348, 1006 350, 1005 352, 1005 354
+</trace>
+
+<traceGroup xml:id="-- Segmentation Data --">
+    <annotation type="truth">Segmentation</annotation>
+
+    <traceGroup xml:id="30:">
+        <annotation type="truth">(</annotation>
+        <traceView traceDataRef="0"/>
+        <annotationXML href="30:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="31:32:33:">
+        <annotation type="truth">T</annotation>
+        <traceView traceDataRef="1"/>
+        <traceView traceDataRef="2"/>
+        <traceView traceDataRef="3"/>
+        <annotationXML href="31:32:33:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="34:">
+        <annotation type="truth">-</annotation>
+        <traceView traceDataRef="4"/>
+        <annotationXML href="34:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="35:">
+        <annotation type="truth">3</annotation>
+        <traceView traceDataRef="5"/>
+        <annotationXML href="35:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="36:37:38:">
+        <annotation type="truth">I</annotation>
+        <traceView traceDataRef="6"/>
+        <traceView traceDataRef="7"/>
+        <traceView traceDataRef="8"/>
+        <annotationXML href="36:37:38:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="39:">
+        <annotation type="truth">)</annotation>
+        <traceView traceDataRef="9"/>
+        <annotationXML href="39:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="40:">
+        <annotation type="truth">2</annotation>
+        <traceView traceDataRef="10"/>
+        <annotationXML href="40:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="42:43:">
+        <annotation type="truth">=</annotation>
+        <traceView traceDataRef="11"/>
+        <traceView traceDataRef="12"/>
+        <annotationXML href="42:43:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="44:">
+        <annotation type="truth">(</annotation>
+        <traceView traceDataRef="13"/>
+        <annotationXML href="44:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="45:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="14"/>
+        <annotationXML href="45:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="46:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="15"/>
+        <annotationXML href="46:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="47:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="16"/>
+        <annotationXML href="47:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="48:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="17"/>
+        <annotationXML href="48:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="49:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="18"/>
+        <annotationXML href="49:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="50:51:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="19"/>
+        <traceView traceDataRef="20"/>
+        <annotationXML href="50:51:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="52:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="21"/>
+        <annotationXML href="52:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="53:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="22"/>
+        <annotationXML href="53:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="54:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="23"/>
+        <annotationXML href="54:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="55:">
+        <annotation type="truth">)</annotation>
+        <traceView traceDataRef="24"/>
+        <annotationXML href="55:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="56:">
+        <annotation type="truth">(</annotation>
+        <traceView traceDataRef="25"/>
+        <annotationXML href="56:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="57:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="26"/>
+        <annotationXML href="57:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="58:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="27"/>
+        <annotationXML href="58:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="59:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="28"/>
+        <annotationXML href="59:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="60:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="29"/>
+        <annotationXML href="60:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="61:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="30"/>
+        <annotationXML href="61:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="62:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="31"/>
+        <annotationXML href="62:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="63:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="32"/>
+        <annotationXML href="63:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="64:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="33"/>
+        <annotationXML href="64:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="65:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="34"/>
+        <annotationXML href="65:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="66:">
+        <annotation type="truth">)</annotation>
+        <traceView traceDataRef="35"/>
+        <annotationXML href="66:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="67:">
+        <annotation type="truth">-</annotation>
+        <traceView traceDataRef="36"/>
+        <annotationXML href="67:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="68:">
+        <annotation type="truth">-</annotation>
+        <traceView traceDataRef="37"/>
+        <annotationXML href="68:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="69:">
+        <annotation type="truth">(</annotation>
+        <traceView traceDataRef="38"/>
+        <annotationXML href="69:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="70:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="39"/>
+        <annotationXML href="70:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="71:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="40"/>
+        <annotationXML href="71:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="72:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="41"/>
+        <annotationXML href="72:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="73:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="42"/>
+        <annotationXML href="73:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="74:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="43"/>
+        <annotationXML href="74:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="75:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="44"/>
+        <annotationXML href="75:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="76:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="45"/>
+        <annotationXML href="76:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="77:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="46"/>
+        <annotationXML href="77:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="78:">
+        <annotation type="truth">0</annotation>
+        <traceView traceDataRef="47"/>
+        <annotationXML href="78:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="79:">
+        <annotation type="truth">)</annotation>
+        <traceView traceDataRef="48"/>
+        <annotationXML href="79:"/>
+    </traceGroup>
+</traceGroup>
+</ink>

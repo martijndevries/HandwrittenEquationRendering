@@ -1,0 +1,120 @@
+<ink xmlns="http://www.w3.org/2003/InkML">
+<traceFormat>
+    <channel name="X" type="decimal"/>
+    <channel name="Y" type="decimal"/>
+</traceFormat>
+<annotation type="truth">$ \begin {pmatrix} 4 &amp; - 2 \\ 1 &amp; 1 \end {pmatrix} $</annotation>
+<annotation type="writer">annot_5</annotation>
+<annotation type="UI">CROHME_2014_MATRICE_RIT_22</annotation>
+<annotation type="copyright">RIT_2014</annotation>
+<annotationXML type="truth" encoding="Content-MathML">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+            <mo xml:id="84:">(</mo>
+            <mrow >
+                <mtable>
+                    <mtr>
+                        <mtd>
+                            <mn  xml:id = "85:86:" >4</mn>
+                        </mtd>
+                        <mtd>
+                            <mrow >
+                                <mo  xml:id = "88:" >-</mo>
+                                <mn  xml:id = "89:" >2</mn>
+                            </mrow>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mn  xml:id = "87:" >1</mn>
+                        </mtd>
+                        <mtd>
+                            <mn  xml:id = "90:" >1</mn>
+                        </mtd>
+                    </mtr>
+                </mtable>
+                <mo  xml:id = "91:" >)</mo>
+            </mrow>
+        </mrow>
+    </math>
+</annotationXML>
+
+<trace  id = "0" >
+241 120, 238 126, 235 135, 230 153, 220 181, 211 213, 207 245, 206 277, 206 310, 211 340, 221 362, 234 378, 246 386, 257 389
+</trace>
+
+<trace  id = "1" >
+313 117, 308 123, 308 131, 308 139, 308 150, 307 160, 306 167, 306 172, 306 179, 309 181, 318 182, 327 182, 338 179, 347 175, 353 170
+</trace>
+
+<trace  id = "2" >
+346 119, 342 126, 340 135, 338 150, 337 171, 335 193, 331 215, 327 235, 322 250
+</trace>
+
+<trace  id = "3" >
+337 291, 339 294, 339 298, 339 306, 339 320, 339 340, 337 358, 335 371, 332 381, 330 387
+</trace>
+
+<trace  id = "4" >
+410 178, 412 177, 418 177, 429 177, 441 177, 453 174
+</trace>
+
+<trace  id = "5" >
+475 144, 476 138, 481 134, 485 131, 492 129, 499 129, 505 131, 509 138, 512 149, 513 163, 513 177, 511 193, 505 205, 498 213, 489 219, 481 221, 477 221, 476 218, 476 208, 485 202, 498 199, 511 199, 524 200, 539 206
+</trace>
+
+<trace  id = "6" >
+511 288, 509 294, 508 303, 507 315, 504 327, 501 340, 499 350, 498 360, 496 366
+</trace>
+
+<trace  id = "7" >
+567 96, 575 95, 580 102, 589 114, 600 133, 609 154, 617 177, 625 203, 629 230, 629 259, 626 286, 614 313, 598 338, 579 361, 561 380, 546 395
+</trace>
+
+<traceGroup xml:id="-- Segmentation Data --">
+    <annotation type="truth">Segmentation</annotation>
+
+    <traceGroup xml:id="84:">
+        <annotation type="truth">(</annotation>
+        <traceView traceDataRef="0"/>
+        <annotationXML href="84:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="85:86:">
+        <annotation type="truth">4</annotation>
+        <traceView traceDataRef="1"/>
+        <traceView traceDataRef="2"/>
+        <annotationXML href="85:86:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="87:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="3"/>
+        <annotationXML href="87:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="88:">
+        <annotation type="truth">-</annotation>
+        <traceView traceDataRef="4"/>
+        <annotationXML href="88:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="89:">
+        <annotation type="truth">2</annotation>
+        <traceView traceDataRef="5"/>
+        <annotationXML href="89:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="90:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="6"/>
+        <annotationXML href="90:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="91:">
+        <annotation type="truth">)</annotation>
+        <traceView traceDataRef="7"/>
+        <annotationXML href="91:"/>
+    </traceGroup>
+</traceGroup>
+</ink>

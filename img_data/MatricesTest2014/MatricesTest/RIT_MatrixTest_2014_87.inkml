@@ -1,0 +1,102 @@
+<ink xmlns="http://www.w3.org/2003/InkML">
+<traceFormat>
+    <channel name="X" type="decimal"/>
+    <channel name="Y" type="decimal"/>
+</traceFormat>
+<annotation type="truth">$ \begin {pmatrix} 3 &amp; 1 \\ 1 &amp; 3 \end {pmatrix} $</annotation>
+<annotation type="writer">annot_405</annotation>
+<annotation type="UI">CROHME_2014_MATRICE_RIT_87</annotation>
+<annotation type="copyright">RIT_2014</annotation>
+<annotationXML type="truth" encoding="Content-MathML">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+            <mo xml:id="0:">(</mo>
+            <mrow >
+                <mtable>
+                    <mtr>
+                        <mtd>
+                            <mn  xml:id = "1:" >3</mn>
+                        </mtd>
+                        <mtd>
+                            <mn  xml:id = "3:" >1</mn>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mn  xml:id = "2:" >1</mn>
+                        </mtd>
+                        <mtd>
+                            <mn  xml:id = "4:" >3</mn>
+                        </mtd>
+                    </mtr>
+                </mtable>
+                <mo  xml:id = "5:" >)</mo>
+            </mrow>
+        </mrow>
+    </math>
+</annotationXML>
+
+<trace  id = "0" >
+407 91, 403 94, 397 106, 388 123, 378 145, 367 169, 360 194, 357 218, 356 240, 356 269, 357 296, 364 320, 374 342, 385 361, 395 375, 402 384, 410 391, 416 394
+</trace>
+
+<trace  id = "1" >
+437 120, 447 118, 458 118, 473 119, 486 121, 500 124, 507 127, 510 132, 510 137, 503 143, 493 148, 483 153, 477 156, 473 158, 472 160, 472 161, 478 163, 488 165, 497 167, 505 171, 510 176, 512 181, 512 186, 508 191, 496 194, 485 196, 477 196, 472 197, 471 198
+</trace>
+
+<trace  id = "2" >
+491 265, 488 272, 488 279, 491 290, 493 301, 495 314, 497 322, 499 328
+</trace>
+
+<trace  id = "3" >
+602 146, 603 138, 603 131, 604 125, 605 120, 605 117, 605 115, 605 119, 605 129, 605 139, 606 153, 606 167, 607 179, 608 190, 609 201
+</trace>
+
+<trace  id = "4" >
+597 246, 601 244, 608 244, 616 244, 625 245, 631 249, 634 252, 636 257, 635 263, 629 267, 620 269, 612 272, 607 274, 604 275, 603 276, 604 279, 613 284, 623 291, 633 298, 641 306, 645 312, 645 317, 642 322, 629 325, 611 327, 597 328, 584 328
+</trace>
+
+<trace  id = "5" >
+667 87, 673 86, 681 90, 687 96, 693 104, 707 121, 721 142, 735 165, 745 188, 750 211, 750 233, 746 263, 731 293, 710 323
+</trace>
+
+<traceGroup xml:id="-- Segmentation Data --">
+    <annotation type="truth">Segmentation</annotation>
+
+    <traceGroup xml:id="0:">
+        <annotation type="truth">(</annotation>
+        <traceView traceDataRef="0"/>
+        <annotationXML href="0:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="1:">
+        <annotation type="truth">3</annotation>
+        <traceView traceDataRef="1"/>
+        <annotationXML href="1:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="2:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="2"/>
+        <annotationXML href="2:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="3:">
+        <annotation type="truth">1</annotation>
+        <traceView traceDataRef="3"/>
+        <annotationXML href="3:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="4:">
+        <annotation type="truth">3</annotation>
+        <traceView traceDataRef="4"/>
+        <annotationXML href="4:"/>
+    </traceGroup>
+
+    <traceGroup xml:id="5:">
+        <annotation type="truth">)</annotation>
+        <traceView traceDataRef="5"/>
+        <annotationXML href="5:"/>
+    </traceGroup>
+</traceGroup>
+</ink>
