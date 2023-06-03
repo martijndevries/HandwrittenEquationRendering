@@ -1,6 +1,8 @@
 *.ipynb_checkpoints
 *.pyc
 .DS_Store
-./processed_images/label*
-./img_data/
-./full_eq_imgs
+processed_images/
+img_data/
+full_eq_imgs/
+label_*
+*.png
