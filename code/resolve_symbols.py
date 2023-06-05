@@ -79,6 +79,7 @@ def find_boxes_to_merge(boxl):
     # 3) 5x the length of the smaller box is NOT smaller than the distance between the boxes
     # 4) the boxes aren't the same box
     # 5) one of the boxes is not inside the other box
+    # 6) AND the total number of overlapping boxes is not 3 (in which case it's more likely to be a simple fraction like 1/3)
     # - then return the two boxes to be merged
 
     is_ol_up = not box_pos_up.isBigger(1.7, axis='x') and not box_pos_up.isBigger(5, axis='y') and 5*min(box_pos_up.ylens) > ydist_max and not box_pos_up.isSame() 
@@ -87,9 +88,9 @@ def find_boxes_to_merge(boxl):
     inside_check_up = not box_pos_up.isInside() and not box_pos_up.isInside(invert=True)
     inside_check_down = not box_pos_down.isInside() and not box_pos_down.isInside(invert=True)
 
-    if is_ol_up == True and inside_check_up == True:
+    if is_ol_up == True and inside_check_up == True and len(boxl) != 3:
         return [box_0, boxl[box_i_max]]
-    elif is_ol_down == True and inside_check_down == True:
+    elif is_ol_down == True and inside_check_down == True and len(boxl) != 3:
         return [box_0, boxl[box_i_min]]
     else:
         return [box_0]
@@ -160,6 +161,30 @@ def above_below_box(box, overlap_boxlist):
     elif hasAbove == True:
         return 2
     
+def scan_x_gaps(box_list):
+    """
+    Given a list of boxes, find which x-coordinates have no boxes overlapping them
+    Returns: a list of x-coordinates (at intervals of 5 pixels) that have no overlapping boxes
+    """
+    #get min and max 
+    xmins = np.array([box_list[j][0] for j in range(len(box_list))])
+    xmaxs = np.array([box_list[j][2] for j in range(len(box_list))])
+    
+    xmin_boxes = np.min(xmins)
+    xmax_boxes = np.max(xmaxs)
+    
+    x_gap_list = []
+    for x in range(xmin_boxes, xmax_boxes, 5):
+        has_overlap = False
+        for box in box_list:
+            if box[0] <= x <= box[2]:
+                has_overlap = True
+                break
+        if has_overlap == False:
+            x_gap_list.append(x)
+            
+    return x_gap_list
+    
 def determine_box_level(box_list):
     """
     Given a list of boxes with coordinates [x1 y1 x2 y2],
@@ -185,19 +210,24 @@ def determine_box_level(box_list):
 
         for j,ebox in enumerate(ebox_list):
             box_pos = BoxPositions(box, ebox)
-            #here, I will consider a box to be 'overlapping', if 20% of the smaller box is covered in x-coordinates by the bigger box
-            #and the boxes overlap lessathan 10% in y-coordinates
-            if box_pos.calc_Overlap(axis='x', relative_to='smaller') > 0.2 and box_pos.calc_Overlap(axis='y', relative_to='both') < 0.10:
+            #here, I will consider a box to be 'overlapping', if 30% of the smaller box is covered in x-coordinates by the bigger box
+            #and the boxes overlap lessathan 30% in y-coordinates
+            if box_pos.calc_Overlap(axis='x', relative_to='smaller') > 0.3 and box_pos.calc_Overlap(axis='y', relative_to='both') < 0.30:
                 overlap_boxes.append(ebox)
                 overlap_labels.append(s_box_list.index(ebox))
         overlap_list.append(overlap_boxes)
     
     #now I have the list for each box that this box overlaps with, and I can determine the levels
-    level = 0
+    level = 0 #initial level
     level_list = []
     stacked_level_list = [] #to keep track of whether the level is part of a stack or not
     in_levels= False #whether we are evaluating boxes inside a stack
     enter_level = False #whether
+    middle_symbol = 0 #to keep track of the 'middle symbol' in a stack. There can only be one per stack
+    
+    
+    #x_gaps to figure out when we enter a new stack when two stacks are adjacent to one another
+    x_gap_list = scan_x_gaps(s_box_list)
     
     for b, box in enumerate(s_box_list):
         
@@ -215,7 +245,14 @@ def determine_box_level(box_list):
         
         #check if box has overlapping boxes that is not a single overlap
         if len(overlap_list[b]) > 0 and single_overlap == False:
-            #if we were in an unstacked parrt and we are entering a stack add a level
+            #if we are in a stack, but the box has crossed an x-gap compared to the previous box , that means we are in a new stack
+            for x_gap in x_gap_list:
+                if in_levels == True and s_box_list[b-1][2] < x_gap < box[0]:
+                    level += 3
+                    middle_symbol = 0
+                    break
+            
+            #if we were in an unstacked part and we are entering a stack, add a level
             if enter_level == True:
                 level += 1
                 enter_level = False
@@ -224,19 +261,35 @@ def determine_box_level(box_list):
             #1 = both
             #2 = above
             level_add = above_below_box(box, overlap_list[b])
+
+            #keep track of middle symbol in the stack and find the yc coords
+            if level_add == 1 and middle_symbol == 0:
+                yc = box[1]*0.5 + box[3]*0.5
+            if level_add == 1: 
+                middle_symbol += 1
+                
+            #if a second 'middle symbol' is found in the stack, it's probably part of the upper or lower level instead
+            #find out which by comparing ycenter coordinates
+            if middle_symbol > 1 and level_add ==1: 
+                yc_new = box[1]*0.5 + box[3]*0.5
+                if yc_new > yc: level_add = 2
+                else: level_add = 0
+                
             level_list.append(level + level_add)
-            stacked_level_list.append(True)
+            stacked_level_list.append(level_add+1)
             in_levels = True
         else:
             #if we were in a stack previously but not anymore, add 3 to indicate we are in a new level (because I assume hte stack has 3 levels)
             if in_levels == True: 
+                middle_symbol = 0
                 level +=3 
             in_levels = False
             enter_level = True
             #if there are no overlapping boxes, we can set the level to the same as the previous level and move on
             level_list.append(level)
-            stacked_level_list.append(False)
-            
+            stacked_level_list.append(0)
+    
+
     #finally, sort the boxes by level
     s_box_list = [box for (_, box) in sorted(zip(level_list, s_box_list))]
     s_stacked_level_list = [isstack for (_, isstack) in sorted(zip(level_list, stacked_level_list))]
@@ -261,10 +314,10 @@ def merge_dots(box_list, stack_list, level_list):
     for b,box in enumerate(box_list[:-1]):
         cbox = box_list[b+1]
 
-        if stack_list[b] == False and stack_list[b+1] == False:
-        #if level_list[b] == level_list[b+1]:
+        #if stack_list[b] == False and stack_list[b+1] == False: 
+        if stack_list[b] == stack_list[b+1]:
             box_pos = BoxPositions(box, cbox)
-            if (box_pos.calc_Overlap(axis='x', relative_to='smaller') > 0.9) and (box_pos.calc_Overlap(axis='y') < 0.2):
+            if (box_pos.calc_Overlap(axis='x', relative_to='smaller') > 0.75) and (box_pos.calc_Overlap(axis='y') < 0.2):
                 merged_dots_list.append(box_pos.merge_boxes())
                 rm_box_list.append([box, cbox])
                 merge_ind_list.append([b, b+1])
@@ -277,7 +330,6 @@ def merge_dots(box_list, stack_list, level_list):
         replace_idx = merge_ind_list[::-1][i][0]
         pop_idx = merge_ind_list[::-1][i][1]
         
-        print(replace_idx, pop_idx)
         box_list[replace_idx] = merged_dots_list[::-1][i]
         box_list.pop(pop_idx)
         
@@ -342,13 +394,13 @@ def isolate_symbols_and_square(box_list, ind_symbols):
         boxes_to_rm = []
         for j,ebox in enumerate(ebox_list):
             #check if the second box is completely inside the other one
-            if BoxPositions(box, ebox).isPartInside() == True or BoxPositions(box, ebox).isInside() == True:
+            if BoxPositions(box, ebox).isInside() == True:
                 eq_i += 1
 
         #if the box has other box contained within them, re-draw with drawContours
         if eq_i > 0:
             symbol = ind_symbols[i]
-            s_ret, s_thresh=cv2.threshold(symbol,100,255,cv2.THRESH_BINARY)
+            s_ret, s_thresh=cv2.threshold(symbol,200,255,cv2.THRESH_BINARY)
             s_ctrs, s_ret =cv2.findContours(s_thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_NONE)
             s_ctrs =sorted(s_ctrs, key=lambda ctr: cv2.boundingRect(ctr)[0])
             
@@ -403,10 +455,11 @@ def resolve_symbols_on_img(img_file):
     """
     #find contours
     img = cv2.imread(img_file,cv2.IMREAD_GRAYSCALE)
-    ret,thresh=cv2.threshold(img,230,255,cv2.THRESH_BINARY)
+    ret,thresh=cv2.threshold(img,200,255,cv2.THRESH_BINARY)
     ctrs, ret =cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     cnt=sorted(ctrs, key=lambda ctr: cv2.boundingRect(ctr)[0] + cv2.boundingRect(ctr)[1])
     fig, ax = plt.subplots()
+
     ax.imshow(img, cmap='gray')
 
     box_list = []
@@ -433,9 +486,10 @@ def resolve_symbols_on_img(img_file):
     #step 3) of all the boxes that are left, determine the order
     tot_boxes, box_levels, stacked_list = determine_box_level(tot_boxes)
     
+    #intermediate step: extra merging
     tot_boxes, stacked_list, box_levels = merge_dots(tot_boxes, stacked_list, box_levels)
 
-    #step 4) figure out the 'script level' of each symbol (whetehr it's on the line, or sub/superscript)
+    #step 4) figure out the 'script level' of each symbol (whether it's on the line, or sub/superscript)
     script_level = 0 
     script_level_list = [0]
     for b, box in enumerate(tot_boxes[:-1]):
@@ -448,7 +502,7 @@ def resolve_symbols_on_img(img_file):
 
     colors = ['r', 'g', 'b', 'g']
     
-    #make a list for the individual symbols
+    #plot the bounding boxes with some information 
     ind_symbols = []
     for i, box in enumerate(tot_boxes):
         x1 = box[0]
@@ -456,7 +510,7 @@ def resolve_symbols_on_img(img_file):
         x2 = box[2] - box[0]
         y2 = box[3] - box[1]
    
-        if stacked_list[i] == True:
+        if stacked_list[i] > 0:
             er = 'b'
         else:
             er = 'r'
@@ -469,10 +523,13 @@ def resolve_symbols_on_img(img_file):
         ax.add_patch(rect)
         ax.text(x1, y1, str(i))
         ind_symbols.append(img[y1:y1+y2,x1:x1+x2])
-    
-    ind_symbols = isolate_symbols_and_square(tot_boxes, ind_symbols)
+                
     ax.plot([], color='b', label='Stacked symbols') #dummies for legend
     ax.plot([], color='r', label='Base level symbols')
     ax.plot([], color='g', label='Super/subscripts')
     ax.legend(frameon=False)
+    
+    #step 5) make a list for the individual symbols
+    ind_symbols = isolate_symbols_and_square(tot_boxes, ind_symbols)
+    
     return ind_symbols, box_levels, stacked_list, script_level_list, ax
