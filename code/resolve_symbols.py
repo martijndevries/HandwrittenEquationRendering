@@ -46,7 +46,7 @@ def remove_box_inside_box(box_list):
 """
 Step 2) Finding which boxes should be merged
 """
-def find_boxes_to_merge(boxl):
+def find_boxes_to_merge(boxl, img_ysize):
     """
     For a list of boxes that are overlapping in x-coordinates, check which box is the closest in distance either above or below the box
     If a box on either side matches certain criteria about the x and ylengths, assume it's two components of an equals sign or ! or i, etc.
@@ -79,7 +79,8 @@ def find_boxes_to_merge(boxl):
     # 3) 5x the length of the smaller box is NOT smaller than the distance between the boxes
     # 4) the boxes aren't the same box
     # 5) one of the boxes is not inside the other box
-    # 6) AND the total number of overlapping boxes is not 3 (in which case it's more likely to be a simple fraction like 1/3)
+    # 6) the total size of the combined boxes is not more than 0.2x the image height
+    # 7) AND the total number of overlapping boxes is not 3 (in which case it's more likely to be a simple fraction like 1/3)
     # - then return the two boxes to be merged
 
     is_ol_up = not box_pos_up.isBigger(1.7, axis='x') and not box_pos_up.isBigger(5, axis='y') and 5*min(box_pos_up.ylens) > ydist_max and not box_pos_up.isSame() 
@@ -88,14 +89,17 @@ def find_boxes_to_merge(boxl):
     inside_check_up = not box_pos_up.isInside() and not box_pos_up.isInside(invert=True)
     inside_check_down = not box_pos_down.isInside() and not box_pos_down.isInside(invert=True)
 
-    if is_ol_up == True and inside_check_up == True and len(boxl) != 3:
+    tot_size_check_up = abs(max(box_pos_up.y2s) - min(box_pos_up.y1s)) > 0.18 * img_ysize
+    tot_size_check_down = abs(max(box_pos_down.y2s) - min(box_pos_down.y1s)) > 0.18 * img_ysize
+
+    if is_ol_up == True and inside_check_up == True and len(boxl) != 3 and not tot_size_check_up:
         return [box_0, boxl[box_i_max]]
-    elif is_ol_down == True and inside_check_down == True and len(boxl) != 3:
+    elif is_ol_down == True and inside_check_down == True and len(boxl) != 3 and not tot_size_check_down:
         return [box_0, boxl[box_i_min]]
     else:
         return [box_0]
     
-def create_merged_boxes(box_list):
+def create_merged_boxes(box_list, img_ysize):
     """
     Given a list of boxes, find out which ones have enough overlap in x-coordinates to be considered for merging
     Then pass this list to find_boxes_to_merge to determine the two that might be merged
@@ -119,7 +123,7 @@ def create_merged_boxes(box_list):
     #find which of the overlapping boxes might fit the criteria to be merged
     for i in range(len(tot_overlap_boxes)):
         if len(tot_overlap_boxes[i]) > 1:
-            boxes_to_merge = find_boxes_to_merge(tot_overlap_boxes[i])
+            boxes_to_merge = find_boxes_to_merge(tot_overlap_boxes[i], img_ysize)
             if len(boxes_to_merge) == 2:
                 #if a pair of boxes to be merged is found, merge them and add the individual boxes to the remove list
                 merged_box_list.append(BoxPositions(*boxes_to_merge).merge_boxes())
@@ -300,7 +304,7 @@ def determine_box_level(box_list):
     #3) a boolean list, which for each box shows if its part of a stack or not
     return s_box_list, s_level_list, s_stacked_level_list
 
-def merge_dots(box_list, stack_list, level_list):
+def merge_dots(box_list, stack_list, level_list, img_ysize):
     """
     After the symbols have been sorted, make one final iteration through 
     If there are symbols where one box is entirely above or below the other, AND they are not part of a stack, merge them
@@ -317,7 +321,8 @@ def merge_dots(box_list, stack_list, level_list):
         #if stack_list[b] == False and stack_list[b+1] == False: 
         if stack_list[b] == stack_list[b+1]:
             box_pos = BoxPositions(box, cbox)
-            if (box_pos.calc_Overlap(axis='x', relative_to='smaller') > 0.75) and (box_pos.calc_Overlap(axis='y') < 0.2):
+            tot_size_check = abs(max(box_pos.y2s) - min(box_pos.y1s)) > 0.18 * img_ysize
+            if (box_pos.calc_Overlap(axis='x', relative_to='smaller') > 0.75) and (box_pos.calc_Overlap(axis='y') < 0.2) and not tot_size_check:
                 merged_dots_list.append(box_pos.merge_boxes())
                 rm_box_list.append([box, cbox])
                 merge_ind_list.append([b, b+1])
@@ -377,7 +382,7 @@ def sub_or_superscript_level(coords1, level1, coords2, level2):
 """
 Step 5) Isolate symbols and put them in square arrays
 """
-def isolate_symbols_and_square(box_list, ind_symbols):
+def isolate_symbols_and_square(box_list, level_list, ind_symbols):
     """
     After all the symbol resolving is done, I will do one final check to see if there are any boxes that have another box contained within them
     This will primarily be the case for roots
@@ -386,7 +391,9 @@ def isolate_symbols_and_square(box_list, ind_symbols):
     """
     
     boxes_checked = []
+    extend_list = [] #to figure out how far a square root should extend over subsequent symbols
     for i, box in enumerate(box_list):
+        ext_counter = 0
         boxes_checked.append(box)
         #the list of all the other boxes to check against
         ebox_list = [ebox for ebox in box_list if ebox not in boxes_checked]
@@ -396,8 +403,20 @@ def isolate_symbols_and_square(box_list, ind_symbols):
             #check if the second box is completely inside the other one
             if BoxPositions(box, ebox).isInside() == True:
                 eq_i += 1
+        
+        #second loop to figure out how far a root should extend
+        #if the next boxes 1) overlap and 2) are on the same level as this one, add +1 to the extension list
+        # keep going until we hit a box that is not on this level
+        for j,ebox in enumerate(ebox_list):
+            b_idx = box_list.index(ebox)
+            if level_list[i] != level_list[b_idx]:
+                break
+            if BoxPositions(box, ebox).isPartInside() == True:
+                ext_counter += 1
+            
+        extend_list.append(ext_counter)
 
-        #if the box has other box contained within them, re-draw with drawContours
+        #if the box has other boxes entirely contained within it, re-draw with drawContours
         if eq_i > 0:
             symbol = ind_symbols[i]
             s_ret, s_thresh=cv2.threshold(symbol,200,255,cv2.THRESH_BINARY)
@@ -415,7 +434,9 @@ def isolate_symbols_and_square(box_list, ind_symbols):
         symbol_shape = ind_symbols[i].shape
         
         #some ugly code to center the symbol in a new, square array
-        white_pix = 10
+        #add about 10% white space on each side
+        white_pix = max(symbol_shape) // 10
+        if white_pix < 2: white_pix = 2
         if max(symbol_shape)%2 == 0:
             ms = max(symbol_shape) +white_pix
         else:
@@ -429,13 +450,13 @@ def isolate_symbols_and_square(box_list, ind_symbols):
         ind_symbols[i] = new_symbol
         
                                      
-    return ind_symbols
+    return ind_symbols, extend_list
 
 """
 Step 6) Combine everything and resolve symbols
 """
 
-def resolve_symbols_on_img(img_file):
+def resolve_symbols_on_img(img_file, plot=True):
     """
     Given an input image file, use opencv's findContours to find the contours related to mathematical symbols,
     and prepare them for model prediction and equation rendering.
@@ -448,19 +469,32 @@ def resolve_symbols_on_img(img_file):
     6) Each symbol is put inside a square array
     Returns:
         1) A list of square image arrays, ordered by how the symbol should appear in an equation
-        2) a 'level list'. Symbols with the same level can be rendered left to right. A new level indicates some change
-        3) a 'stack list'. True/false for each symbol depending on whether it's part of a stack or not
+        2) a 'level list'. Symbols with the same level can be rendered left to right. A new level indicates some change, either 
+        3) a 'stack list'. 0 for a symbol not in a stack, 1/2/3 for symbols in the top/middle/bottom of a stack, respectively
         4) a 'script level list'. To determine whether a symbol is a sub/superscript of the previous one. equal script levels means the symbol should be at equal line height
         5) ax of a plot displaying the image
     """
     #find contours
     img = cv2.imread(img_file,cv2.IMREAD_GRAYSCALE)
-    ret,thresh=cv2.threshold(img,200,255,cv2.THRESH_BINARY)
+    img_size = img.shape[0] * img.shape[1]
+
+    #if more than 90% of pixels are already at a perfect black/white (0 or 255), just use a simple binary threshholding
+    bw_pixs = len(img[(img == 0) | (img == 255)]) / img_size
+    if bw_pixs > 0.9:
+        ret,thresh=cv2.threshold(img, 230, 255, cv2.THRESH_BINARY)
+    #else: use a combination of adaptive threshholding together with a linear cut after to get rid of as many small-scale shadows/dots etc as possible
+    else:
+        thresh  = cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY,11,2)
+        blur = cv2.GaussianBlur(thresh,(13,13),0)
+        bt = np.percentile(blur, 1.4)
+        ret,thresh=cv2.threshold(blur,bt, 255, cv2.THRESH_BINARY)
+
     ctrs, ret =cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     cnt=sorted(ctrs, key=lambda ctr: cv2.boundingRect(ctr)[0] + cv2.boundingRect(ctr)[1])
-    fig, ax = plt.subplots()
 
-    ax.imshow(img, cmap='gray')
+    if plot:
+        fig, ax = plt.subplots()
+        ax.imshow(img, cmap='gray')
 
     box_list = []
     
@@ -468,16 +502,16 @@ def resolve_symbols_on_img(img_file):
     for i,c in enumerate(cnt[1:]):
         x1,y1,x2,y2= cv2.boundingRect(c)
         #switch to absolute x and y coordinatees (not x1, y1, xlen, ylen)
-        x2 += x1
-        y2 += y1
-        
-        box_list.append([x1, y1, x2, y2])
 
+        #only include boxes that are a certain % of the total image area
+        if x2*y2 > 2e-4 *img_size:
+            box_list.append([x1, y1, x2+x1, y2+y1])
+    
     #step 1) remove boxes that are inside another box under certain criteria
     box_list = remove_box_inside_box(box_list)
     
     #step 2) find which boxes should be merged, and remove the individual boxes
-    box_list, merged_box_list = create_merged_boxes(box_list)
+    box_list, merged_box_list = create_merged_boxes(box_list, img.shape[0])
 
     #remove non-unique boxes (there might be duplicates in the merged box list)
     tot_boxes = box_list + merged_box_list
@@ -487,7 +521,7 @@ def resolve_symbols_on_img(img_file):
     tot_boxes, box_levels, stacked_list = determine_box_level(tot_boxes)
     
     #intermediate step: extra merging
-    tot_boxes, stacked_list, box_levels = merge_dots(tot_boxes, stacked_list, box_levels)
+    tot_boxes, stacked_list, box_levels = merge_dots(tot_boxes, stacked_list, box_levels, img.shape[0])
 
     #step 4) figure out the 'script level' of each symbol (whether it's on the line, or sub/superscript)
     script_level = 0 
@@ -510,26 +544,33 @@ def resolve_symbols_on_img(img_file):
         x2 = box[2] - box[0]
         y2 = box[3] - box[1]
    
-        if stacked_list[i] > 0:
-            er = 'b'
-        else:
-            er = 'r'
-            
-        if script_level_list[i] != 0:
-            er = 'g'
-            
-        rect = patches.Rectangle((x1, y1), x2, y2, linewidth=1, edgecolor=er, facecolor='none')
+        ind_symbols.append(thresh[y1:y1+y2,x1:x1+x2])
+    
+        if plot:
 
-        ax.add_patch(rect)
-        ax.text(x1, y1, str(i))
-        ind_symbols.append(img[y1:y1+y2,x1:x1+x2])
-                
-    ax.plot([], color='b', label='Stacked symbols') #dummies for legend
-    ax.plot([], color='r', label='Base level symbols')
-    ax.plot([], color='g', label='Super/subscripts')
-    ax.legend(frameon=False)
+            if stacked_list[i] > 0:
+                er = 'b'
+            else:
+                er = 'r'
+            
+            if script_level_list[i] != 0:
+                er = 'g'
+            
+            rect = patches.Rectangle((x1, y1), x2, y2, linewidth=1, edgecolor=er, facecolor='none')
+
+            ax.add_patch(rect)
+            ax.text(x1, y1, str(i))
+
+    if plot:
+        ax.plot([], color='b', label='Stacked symbols') #dummies for legend
+        ax.plot([], color='r', label='Base level symbols')
+        ax.plot([], color='g', label='Super/subscripts')
+        ax.legend(frameon=False)
     
     #step 5) make a list for the individual symbols
-    ind_symbols = isolate_symbols_and_square(tot_boxes, ind_symbols)
+    ind_symbols, extend_list = isolate_symbols_and_square(tot_boxes, box_levels, ind_symbols)
     
-    return ind_symbols, box_levels, stacked_list, script_level_list, ax
+    if plot:
+        return ind_symbols, box_levels, stacked_list, script_level_list, extend_list, ax
+    else:
+        return ind_symbols, box_levels, stacked_list, script_level_list, extend_list

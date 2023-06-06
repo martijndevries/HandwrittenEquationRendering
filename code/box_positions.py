@@ -21,6 +21,8 @@ class BoxPositions:
             True/False check whether box2 is completely inside box1
         isBigger(self, len_factor, axis='x'):
             True/False check whether the bigger of the two boxes is bigger than the smaller box by some factor, along the specified axis (x or y)
+        isPartInside(self)
+            True/False check whether the two boxes overlap at all
         calc_Overlap(self, axis='x', relative_to='both')
             calculates how much the boxes overlap, on the specified axis. relative to can be to both boxes, or to the smaller box (-> How much does the smaller box stick out)
         calc_box_extends(self)
@@ -82,7 +84,7 @@ class BoxPositions:
             else:
                 return False
             
-    def isPartInside(self, invert=False):
+    def isPartInside(self):
         """
         Check whether the second box is partly inside the first box. The second box does NOT overlap with the first if
         1) the box is above or below the first box
