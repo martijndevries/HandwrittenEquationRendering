@@ -1,7 +1,6 @@
 *.ipynb_checkpoints
 *.pyc
 .DS_Store
-img_data/
 inkml_data/
 label_*
 *.png

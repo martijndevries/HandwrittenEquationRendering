@@ -42,6 +42,41 @@ def remove_box_inside_box(box_list):
         except:
             pass
     return box_list
+
+def remove_box_inside_box_2(box_list, thresh, contours):
+    """
+    Given a list of boxes with coordinates [x1 y1 x2 y2]
+    Check if any boxes are completely inside another box. 
+    If there are fewer than 3 boxes inside another box (eg. its not a root with lots of stuff in it)
+    Assume these are inner contour boxes and remove them
+    """
+    rm_boxes = []
+    for i, box in enumerate(box_list):
+        #the list of all the other boxes to check against
+        ebox_list = [ebox for ebox in box_list if box != ebox]
+        eq_i = 0 #counter to keep track of how many boxes are inside other boxes
+        
+        boxes_to_rm = []
+        for j,ebox in enumerate(ebox_list):
+            #get index in main box list
+            b_idx = box_list.index(ebox)
+            
+            #check if the second box is completely inside the other one
+            if BoxPositions(box, ebox).isInside() == True:
+                cimg = np.zeros_like(thresh)
+                cv2.drawContours(cimg, contours, b_idx, color=255, thickness=-1)
+                avg_pixval = np.average(cimg[ebox[1]:ebox[3],ebox[0]:ebox[2]])
+                print('average pixel value:', avg_pixval)
+                boxes_to_rm.append(ebox)
+        #add all the boxes to the remove list
+        if 0 < eq_i < 3:
+            rm_boxes.extend(boxes_to_rm)
+    for rm_box in rm_boxes:
+        try:
+            box_list.remove(rm_box)
+        except:
+            pass
+    return box_list
     
 """
 Step 2) Finding which boxes should be merged
@@ -502,13 +537,17 @@ def resolve_symbols_on_img(img_file, plot=True):
     for i,c in enumerate(cnt[1:]):
         x1,y1,x2,y2= cv2.boundingRect(c)
         #switch to absolute x and y coordinatees (not x1, y1, xlen, ylen)
-
+         
+        #calculate the area of the contour - if negative, the contour is an inner contour and should be excluded
+        ctr_ar = cv2.contourArea(c, oriented=True)
+     
+        
         #only include boxes that are a certain % of the total image area
-        if x2*y2 > 2e-4 *img_size:
+        if x2*y2 > 2e-4 *img_size and ctr_ar > 0:
             box_list.append([x1, y1, x2+x1, y2+y1])
     
     #step 1) remove boxes that are inside another box under certain criteria
-    box_list = remove_box_inside_box(box_list)
+    #box_list = remove_box_inside_box(box_list)
     
     #step 2) find which boxes should be merged, and remove the individual boxes
     box_list, merged_box_list = create_merged_boxes(box_list, img.shape[0])

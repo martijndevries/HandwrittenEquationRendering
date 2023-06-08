@@ -41,9 +41,34 @@ A high-level overview of each step is given below. More detail on the exact step
 
 ### 1) Resolving symbols
 
-As a first step, when the image is uploaded it is thresholded towards black and white values. For the inkML equation files, this is trivial as they were created digitally. However, the tool should also be able to handle real-world pictures with imperfections and shadows. For those images, a three-step process is applied: firstly, the images is tresholded with adaptive gaussian tresholding. This process often will still result in small-scale features on the image that we would like to remove. To remove these features, a Gaussian blurring is applied, and then a second, binary tresholding is applied to remove these small-scale features (more information on tresholding in openCV can be found <a href=https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html>here</a>).
+As a first step, when the image is uploaded it is thresholded towards black and white values. For the inkML equation files, this is trivial as they were created digitally. However, the tool should also be able to handle real-world pictures with imperfections and shadows. For those images, a three-step process is applied: firstly, the images is tresholded with adaptive gaussian tresholding. This process often will still result in small-scale features on the image that we would like to remove. To remove these features, a Gaussian blurring, and then a second, binary tresholding is applied to remove these small-scale features (more information on tresholding in openCV can be found <a href=https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html>here</a>).
 
-Next, the symbols are detected with openCVs <a href=https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a>findContours()</a> function. In order to further remove,
+Next, the symbols are detected with openCVs <a href=https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a>findContours()</a> function. In order to further ignore small imperfections on the image, only contours with bounding boxes above a certain size (relative to the total image size) are considered. An example of a thresholded image (an equation handwritten by me), with the bounding boxes from findContours() overlayed, is shown below.
+
+ <img src="./figures/contours_example.png" height="180px"/>
+
+There are a few crucial steps that the pre-processing pipeline needs to take before individual symbols can be fed to the model for prediction: some boxes bound inner contours,  which should not be included. Additionally, some boxes are actually part of a single symbol, like in the 'equals' sign. Additionally, we need to know the order of the symbols, as well as additional information how they relate to other symbols in the equation: are they in a fraction, are they subscripts or superscript? Are they below a limit sign or above a summation sign? The pre-processing pipeline tries to take care of each of these things, primarily by making informed guessess about symbols using the relative locations of the boxes on the image. An example of the same image after pre-processing is shown below:
+
+ <img src="./figures/preprocessed_example.png" height="180px"/>
+ 
+ The pre-processing pipeline has correctly figured out: 1) which boxes are inner contours, and removed them, 2) that the 'equals' sign and the factorial should be considered single symbols, 3) the order the symbols should be read in, 4) the fact that the symbols in the 'limit' sign and within the fraction are related to eachother, in what I call a 'stack', and 5) which symbols are superscripts. 
+ 
+We can also see that the pipeline is not foolproof. In the example above, the infinity symbol is incorrectly guessed not to be a part of the stack, because it extends a little too far out from under the limit sign.
+
+The output of the preprocessing pipeline is as follows
+<ol>
+ <li>A list of 2D image arrays, each with a single symbol (ordered by appearnce in the equation)</li>
+ <li>A list of the 'level' of each symbol, where a 'level' is a set of adjacent symbols that can be read left-to-right </li>
+ <li> The 'stack value' of each symbol, where a value of 0 means the symbol is unstacked (there are no symbols above or below it that it has any relation to), and 1,2 and 3 indicate the top, middle (if it exists), and bottom levels of a stack respectively</li>
+ <li> The 'script level' of each symbol where a level of 0 means the symbol is at base level, a level of -1 means the symbol is a subscript, a level of 1 means the symbol is a superscript, etc </li>
+ <li> The 'extend list' of each symbol. This list for now only exists so that the equation rendering function knows when to close out a root sign. </li>
+ <li> If plot=True, an image with the boundign boxes for each symbol (color coded on whether they are base level symbols, in a stack, or super/subscripts) is also shown, and a pyplot ax object is also returned
+ </ol>
+
+### 2) Model Prediction
+
+This is the most 
+
 
 
 ## Overall Conclusions
