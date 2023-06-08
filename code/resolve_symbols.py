@@ -544,7 +544,7 @@ def resolve_symbols_on_img(img_file, plot=True):
         x2 = box[2] - box[0]
         y2 = box[3] - box[1]
    
-        ind_symbols.append(thresh[y1:y1+y2,x1:x1+x2])
+        ind_symbols.append(img[y1:y1+y2,x1:x1+x2])
     
         if plot:
 
