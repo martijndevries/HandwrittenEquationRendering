@@ -2,5 +2,5 @@
 *.pyc
 .DS_Store
 inkml_data/
-label_*
-*.png
+img_data/full_equations/
+img_data/train_symbols/
