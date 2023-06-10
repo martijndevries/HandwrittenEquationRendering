@@ -122,6 +122,12 @@ class BoxPositions:
         ext_top= self.boxExtends(direction='top')
         ext_bottom= self.boxExtends(direction='bottom')
 
+        
+        if self.y2s[1] == self.y2s[0]:
+            ext_bottom = ext_top
+        if self.y1s[1] == self.y1s[0]:
+            ext_top = ext_bottom
+                
         if axis == 'x':
             #if one of the boxes is longer than the other on both sides, the overlap should be 1
             if (ext_left and ext_right) or (not ext_left and not ext_right):
@@ -181,6 +187,7 @@ class BoxPositions:
         """
         Check whether box2 extends a certain direction out from of box1
         """
+        #print(self.y1s, se
         if direction == 'left':
             if self.x1s[1] < self.x1s[0]:
                 return True

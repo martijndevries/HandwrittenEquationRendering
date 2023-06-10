@@ -9,74 +9,7 @@ from box_positions import BoxPositions
 """
 Preprocessing 'resolve symbols' pipeline, to create images of individual symbols that the model should make predictions on
 See notebook resolve_symbols.ipynb for a more detailed explanation of each step
-"""
-
-"""
-Step 1)  Removing a box inside another box
-"""
-def remove_box_inside_box(box_list):
-    """
-    Given a list of boxes with coordinates [x1 y1 x2 y2]
-    Check if any boxes are completely inside another box. 
-    If there are fewer than 3 boxes inside another box (eg. its not a root with lots of stuff in it)
-    Assume these are inner contour boxes and remove them
-    """
-    rm_boxes = []
-    for i, box in enumerate(box_list):
-        #the list of all the other boxes to check against
-        ebox_list = [ebox for ebox in box_list if box != ebox]
-        eq_i = 0 #counter to keep track of how many boxes are inside other boxes
-        
-        boxes_to_rm = []
-        for j,ebox in enumerate(ebox_list):
-            #check if the second box is completely inside the other one
-            if BoxPositions(box, ebox).isInside() == True:
-                eq_i += 1
-                boxes_to_rm.append(ebox)
-        #add all the boxes to the remove list
-        if 0 < eq_i < 3:
-            rm_boxes.extend(boxes_to_rm)
-    for rm_box in rm_boxes:
-        try:
-            box_list.remove(rm_box)
-        except:
-            pass
-    return box_list
-
-def remove_box_inside_box_2(box_list, thresh, contours):
-    """
-    Given a list of boxes with coordinates [x1 y1 x2 y2]
-    Check if any boxes are completely inside another box. 
-    If there are fewer than 3 boxes inside another box (eg. its not a root with lots of stuff in it)
-    Assume these are inner contour boxes and remove them
-    """
-    rm_boxes = []
-    for i, box in enumerate(box_list):
-        #the list of all the other boxes to check against
-        ebox_list = [ebox for ebox in box_list if box != ebox]
-        eq_i = 0 #counter to keep track of how many boxes are inside other boxes
-        
-        boxes_to_rm = []
-        for j,ebox in enumerate(ebox_list):
-            #get index in main box list
-            b_idx = box_list.index(ebox)
-            
-            #check if the second box is completely inside the other one
-            if BoxPositions(box, ebox).isInside() == True:
-                cimg = np.zeros_like(thresh)
-                cv2.drawContours(cimg, contours, b_idx, color=255, thickness=-1)
-                avg_pixval = np.average(cimg[ebox[1]:ebox[3],ebox[0]:ebox[2]])
-                print('average pixel value:', avg_pixval)
-                boxes_to_rm.append(ebox)
-        #add all the boxes to the remove list
-        if 0 < eq_i < 3:
-            rm_boxes.extend(boxes_to_rm)
-    for rm_box in rm_boxes:
-        try:
-            box_list.remove(rm_box)
-        except:
-            pass
-    return box_list
+"""        
     
 """
 Step 2) Finding which boxes should be merged
@@ -199,6 +132,8 @@ def above_below_box(box, overlap_boxlist):
         return 0
     elif hasAbove == True:
         return 2
+    else:
+        return 0
     
 def scan_x_gaps(box_list):
     """
@@ -233,7 +168,11 @@ def determine_box_level(box_list):
     Eg: the equation 1 + 5x + (9-x^2)/(4+x) has 4 levels: 1 + 5x +, (9-x^2), /, and 4+x
     The levels 9-x^2, /, and 4+x are inside a stack that should be read top to bottom
     """
+ 
 
+    if len(box_list) == 1:
+        return box_list, [0], [0]
+    
     #first sort all the boxes by their x1 coordinate    
     xmins_l = np.array([box_list[j][0] for j in range(len(box_list))])
     s_box_list = [box for (_, box) in sorted(zip(xmins_l, box_list))]
@@ -246,7 +185,6 @@ def determine_box_level(box_list):
         ebox_list = [ebox for ebox in s_box_list if box != ebox] 
         overlap_boxes = []
         overlap_labels = []
-
         for j,ebox in enumerate(ebox_list):
             box_pos = BoxPositions(box, ebox)
             #here, I will consider a box to be 'overlapping', if 30% of the smaller box is covered in x-coordinates by the bigger box
@@ -255,7 +193,7 @@ def determine_box_level(box_list):
                 overlap_boxes.append(ebox)
                 overlap_labels.append(s_box_list.index(ebox))
         overlap_list.append(overlap_boxes)
-    
+        
     #now I have the list for each box that this box overlaps with, and I can determine the levels
     level = 0 #initial level
     level_list = []
@@ -400,7 +338,7 @@ def sub_or_superscript_level(coords1, level1, coords2, level2):
 
     s2 = s2 
     
-    s3 = box_pos.calc_box_extends_center()
+    #s3 = box_pos.calc_box_extends_center()
 
     tot_score = s1*0.8 + s2*3.2 #+ s3*0.45
         
@@ -507,7 +445,7 @@ def resolve_symbols_on_img(img_file, plot=True):
         2) a 'level list'. Symbols with the same level can be rendered left to right. A new level indicates some change, either 
         3) a 'stack list'. 0 for a symbol not in a stack, 1/2/3 for symbols in the top/middle/bottom of a stack, respectively
         4) a 'script level list'. To determine whether a symbol is a sub/superscript of the previous one. equal script levels means the symbol should be at equal line height
-        5) ax of a plot displaying the image
+        5) fig and ax objects, if plot=True
     """
     #find contours
     img = cv2.imread(img_file,cv2.IMREAD_GRAYSCALE)
@@ -538,16 +476,13 @@ def resolve_symbols_on_img(img_file, plot=True):
         x1,y1,x2,y2= cv2.boundingRect(c)
         #switch to absolute x and y coordinatees (not x1, y1, xlen, ylen)
          
-        #calculate the area of the contour - if negative, the contour is an inner contour and should be excluded
+        #step 1) calculate the area of the contour - if negative, the contour is an inner contour and should be excluded
         ctr_ar = cv2.contourArea(c, oriented=True)
      
         
         #only include boxes that are a certain % of the total image area
         if x2*y2 > 2e-4 *img_size and ctr_ar > 0:
             box_list.append([x1, y1, x2+x1, y2+y1])
-    
-    #step 1) remove boxes that are inside another box under certain criteria
-    #box_list = remove_box_inside_box(box_list)
     
     #step 2) find which boxes should be merged, and remove the individual boxes
     box_list, merged_box_list = create_merged_boxes(box_list, img.shape[0])
@@ -565,13 +500,14 @@ def resolve_symbols_on_img(img_file, plot=True):
     #step 4) figure out the 'script level' of each symbol (whether it's on the line, or sub/superscript)
     script_level = 0 
     script_level_list = [0]
-    for b, box in enumerate(tot_boxes[:-1]):
-        script_add, score = sub_or_superscript_level(tot_boxes[b], box_levels[b], tot_boxes[b+1], box_levels[b+1])
-        if script_add == -10:
-            script_level = 0
-        else:
-            script_level += script_add
-        script_level_list.append(script_level)
+    if len(tot_boxes) > 1:
+        for b, box in enumerate(tot_boxes[:-1]):
+            script_add, score = sub_or_superscript_level(tot_boxes[b], box_levels[b], tot_boxes[b+1], box_levels[b+1])
+            if script_add == -10:
+                script_level = 0
+            else:
+                script_level += script_add
+            script_level_list.append(script_level)
 
     colors = ['r', 'g', 'b', 'g']
     
@@ -583,7 +519,7 @@ def resolve_symbols_on_img(img_file, plot=True):
         x2 = box[2] - box[0]
         y2 = box[3] - box[1]
    
-        ind_symbols.append(img[y1:y1+y2,x1:x1+x2])
+        ind_symbols.append(thresh[y1:y1+y2,x1:x1+x2])
     
         if plot:
 
@@ -610,6 +546,8 @@ def resolve_symbols_on_img(img_file, plot=True):
     ind_symbols, extend_list = isolate_symbols_and_square(tot_boxes, box_levels, ind_symbols)
     
     if plot:
-        return ind_symbols, box_levels, stacked_list, script_level_list, extend_list, ax
+        return ind_symbols, box_levels, stacked_list, script_level_list, extend_list, fig, ax
     else:
         return ind_symbols, box_levels, stacked_list, script_level_list, extend_list
+
+   

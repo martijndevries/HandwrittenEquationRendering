@@ -71,7 +71,7 @@ def check_comb_signs(symbol_list, script_list, extend_list, level):
         return symbol_list, script_list, extend_list
     
     #sin
-    symb_combos = [['s', 'S', '5', '\\lt'], ['i', '1', 't'], ['n']]
+    symb_combos = [['s', 'S', '5', '\\lt'], ['i', '1', 't', '!'], ['n']]
     symbol_list, script_list, extend_list = search_and_replace_combo(symbol_list, script_list, extend_list, symb_combos, '\\sin')
     
     #cos 
@@ -214,7 +214,7 @@ def render_equation(symbol_list, levels, stack, script_levels, extend_list):
             if s > 0:
                 if abs(script_lol[sl][s]) < abs(script_lol[sl][s-1]) and no_close == False:
                     eq_string += '}'
-            
+
             #if we entered stack, first check what the middle symbol is
             if stack_lol[sl] == 1 and s == 0:
                 #is there a middle symbol?
@@ -229,6 +229,10 @@ def render_equation(symbol_list, levels, stack, script_levels, extend_list):
                     #also break, we will ignore any other chars on this level because a lim should be by itself
                     break
             
+            
+            if symbol == 'adiv':
+                symbol = '\/'
+                
             #add symbol
             eq_string += ' ' + symbol 
                    

@@ -7,18 +7,37 @@ martijndevries91@gmail.com
 
 As a data scientist at a small tech startup, I have been tasked with developing a new tool that can render equations into digital format. Using the 2011-2013 CROHME datasets of handwritten equations and mathematical symboos, I will build a tool that accepts an image of an handwritten equation, predicts which symbols are on the image, and then renders the equation and  LaTeX. Both the image of the equation and the latex representation should be returned. For the symbol recognition, I will use a pre-trained EfficientNetB0 Convolutional Network. In order to evaluate the success of the model, we will look both at how accurately the model can predict individual symbols. I will also calculate the 'Demerau-Levenshtein' distance between the predicted vs ground truth equation strings, in order to gauge how succesfull the full pipeline is in resolving the equation.
 
+## Software Requirements
+
+To run the code in this repository, I have used the following python libraries
+<ul>
+    <li> Numpy version 1.23.5 </li>
+    <li> Matplotlib version 3.7.1 </li>
+    <li> OpenCV (or cv2) version 4.7.0 </li>
+    <li> Jellyfish version 0.11.2 </li>
+    <li> Tensorflow version 2.10.0. <b>Note:</b> In order to save the efficientnet model using tensorflows model.save() function, I had to edit some code in the package folder. It appears that efficientNet does save with no issues on Tensorflow 2.9 or lower</li>
+</ul>
 
 ## Repository Overview
     
 This repository consists of the following:
 
 <ul>
-   <li> The directory <code>./code</code> contains 4 notebooks and several .py files that go through each of the steps in the analysis
+   <li> The directory <code>./code</code> contains 4 notebooks and several .py files that walk through the project:
    
    <ol>
     <li> In <b>data_processing.ipynb</b> I inspect the inkML data and process them into image files to be used later in the analysis. Two types of images are generated: individual symbol images (to train the model on), and full equation images (to evaluate the performance of the full pipeline at the end </li>
-   </ol>
-    <li> The directory <code>./CNN_model/</code> contains the trained efficientNetB0 model, used to make predictions on images of individual symbols
+    <li> In <b> resolve_symbols.ipynb</b>, I do a bit of EDA on some of the image data, and create the preprocessing pipeline </li>
+    <li> In <b>CNN_training.ipynb</b>, I load in the image data of individua models an train an efficientNetB0 model to classify individual symbols </li>
+    <li> In <b> equation_rendering.ipynb</b>, I develop the final step of the pipeline to turn a list of predictions into an equation </li>
+     </ol>
+     Additionally, there are 3 .py files that helper functions that contain the majority of the pre and post-processing code:
+     <ol>
+       <li> The file <b>box_positions.py</b> contains the BoxPositions class, which is used in the pre-processing pipeline to compare the bounding boxes of symbols in various ways </li>
+    <li>The file <b>resolve_symbols.py</b> contains the code for the pre-processing step </li>
+    <li> The file <b>render_equations.py </b>contains most of the code for the post-processing step </li>
+    </ol>  </li>
+    <li> The directory <code>./CNN_model/</code> contains the trained efficientNetB0 model, used to make predictions on images of individual symbols </li>
    <li> The directory <code>./figures</code> contains all the figures that are saved during the analysis in the notebooks, in .png formats </li>
     <li> The slides for the project presentation are in the file <code>equation_rendering_slides.pdf</code> </li>
 </ul>
@@ -27,14 +46,23 @@ This repository consists of the following:
 ## Data Overview
 
 
+The CROHME (Competition for Recognition of Handwritten Mathematical Expressions) dataset was created over the course of several years as part of a Handwriting Recognition conference. More information on the dataset can be found <a href=https://www.isical.ac.in/~crohme/CROHME_data.html>here</a>. The data itself was obtained from <a href=https://www.kaggle.com/datasets/rtatman/handwritten-mathematical-expressions>Kaggle</a>. For storage space reasons, the data is not included in this repository, and needs to be downloaded separately.
+
+The data is in 'inkML' format. Each inkML file contains coordinate lists, which outline handwritten traces of symbols. Each trace, or stroke, is a separate entry, and symbols might consist of multiple traces. There is also a 'traceGroup' property, which shows which traces together form a symbol. Additionally, the label of individual symbols, as well as the full equation shown in the image, is included.
+
+In the data processing notebook. I read in the inkML training data files from the 2011-2013 competitions. The majority of the data is written out as small images of individual symbols, which are used to train the model. About a 1000 equation files are saved as full equation images, which are used to evaluate the performance of the full pipeline. An example of an inkML file, with all traces plotted in individual colors, is shown below.
+
+ <img src="./figures/inkml_example.png" height="250px"/>
+
+
 ## Pipeline Summary
 
 The full pipeline to turn a handwritten equation into a digital one consists of 3 major steps:
 
 <ol>
-    <li> <b>Resolving symbols</b> In this pre-processing step, individual symbols are detected on the image as well as some additional information essential to rendering the equation </li>
+    <li> <b>Resolving symbols</b> In the pre-processing step, the image is loaded in, tresholded, and individual symbols are detected on the image. Additionally, some essentialy information, such as the order the symbols should appear in, is inferred. </li>
     <li> <b>Model prediction:</b> An EfficientNetB0 Convolutional Neural Network was trained to recognize individual symbols. The images from the pre-processing step are fed to the model, and a prediction is made for each symbol </li>
-    <li> <b>Equation rendering:</b> In this post-processing step, the predicted labels for each symbol are stitched together into an equation, using the predictions and the information from the pre-processing step</li>
+    <li> <b>Equation rendering:</b> In thE post-processing step, the predicted labels for each symbol are stitched together into an equation, using the predictions and the information from the pre-processing step</li>
 </ol>
 
 A high-level overview of each step is given below. More detail on the exact steps taken can be found in the notebooks.
@@ -45,30 +73,49 @@ As a first step, when the image is uploaded it is thresholded towards black and 
 
 Next, the symbols are detected with openCVs <a href=https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a>findContours()</a> function. In order to further ignore small imperfections on the image, only contours with bounding boxes above a certain size (relative to the total image size) are considered. An example of a thresholded image (an equation handwritten by me), with the bounding boxes from findContours() overlayed, is shown below.
 
- <img src="./figures/contours_example.png" height="180px"/>
+ <img src="./figures/contours_example.png" height="250px"/>
 
-There are a few crucial steps that the pre-processing pipeline needs to take before individual symbols can be fed to the model for prediction: some boxes bound inner contours,  which should not be included. Additionally, some boxes are actually part of a single symbol, like in the 'equals' sign. Additionally, we need to know the order of the symbols, as well as additional information how they relate to other symbols in the equation: are they in a fraction, are they subscripts or superscript? Are they below a limit sign or above a summation sign? The pre-processing pipeline tries to take care of each of these things, primarily by making informed guessess about symbols using the relative locations of the boxes on the image. An example of the same image after pre-processing is shown below:
+There are a few crucial steps that the pre-processing pipeline needs to take before individual symbols can be fed to the model for prediction: for example, some boxes bound inner contours,  which should not be included. Additionally, some boxes are actually part of a single symbol, like in the 'equals' sign. Additionally, we need to know the order of the symbols, as well as additional information how they relate to other symbols in the equation: are they in a fraction, are they subscripts or superscript? Are they below a limit sign or above a summation sign? The pre-processing pipeline tries to take care of each of these things, primarily by making informed guessess about symbols using the relative locations of the boxes on the image. An example of the same image after pre-processing is shown below:
 
- <img src="./figures/preprocessed_example.png" height="180px"/>
+ <img src="./figures/preprocessed_example.png" height="250px"/>
  
- The pre-processing pipeline has correctly figured out: 1) which boxes are inner contours, and removed them, 2) that the 'equals' sign and the factorial should be considered single symbols, 3) the order the symbols should be read in, 4) the fact that the symbols in the 'limit' sign and within the fraction are related to eachother, in what I call a 'stack', and 5) which symbols are superscripts. 
+ The pre-processing pipeline has correctly figured out: 1) which boxes are inner contours, and removed them, 2) that the 'equals' sign and the factorial should be considered single symbols, 3) the order the symbols should be read in, 4) the fact that the symbols in the 'limit' sign and within the fraction are related to eachother, in what I refer to as a  'stack', and 5) which symbols are superscripts. 
  
 We can also see that the pipeline is not foolproof. In the example above, the infinity symbol is incorrectly guessed not to be a part of the stack, because it extends a little too far out from under the limit sign.
 
 The output of the preprocessing pipeline is as follows
 <ol>
- <li>A list of 2D image arrays, each with a single symbol (ordered by appearnce in the equation)</li>
+ <li>A list of 2D image arrays, each with a single symbol (ordered by appearance in the equation)</li>
  <li>A list of the 'level' of each symbol, where a 'level' is a set of adjacent symbols that can be read left-to-right </li>
  <li> The 'stack value' of each symbol, where a value of 0 means the symbol is unstacked (there are no symbols above or below it that it has any relation to), and 1,2 and 3 indicate the top, middle (if it exists), and bottom levels of a stack respectively</li>
  <li> The 'script level' of each symbol where a level of 0 means the symbol is at base level, a level of -1 means the symbol is a subscript, a level of 1 means the symbol is a superscript, etc </li>
  <li> The 'extend list' of each symbol. This list for now only exists so that the equation rendering function knows when to close out a root sign. </li>
- <li> If plot=True, an image with the boundign boxes for each symbol (color coded on whether they are base level symbols, in a stack, or super/subscripts) is also shown, and a pyplot ax object is also returned
+ <li> If plot=True, an image with the boundign boxes for each symbol (color coded on whether they are base level symbols, in a stack, or super/subscripts) is also shown, and a pyplot ax object is returned
  </ol>
 
 ### 2) Model Prediction
 
-This is the most 
+This is the most straightforward step of the pipeline. The efficientNetB0 model that is trained in <b>CNN_training.ipynb</b> is loaded in, and each of the symbol images from the pre-processing step are fed to the model. A list of predictions is then returned.
+The output of this step is symbol a list of predicted class labels.
+
+### 3) Equation Rendering
+
+After the predictions have been made, the individual labels need to be stitched into a full equation. This is done in the equation rendering step. An overview of the steps that are taken here:
+
+<ol>
+    <li> The equation first checks which symbols belong together in a level, and loops over the symbols level-by-level </li>
+    <li> Before the loop over individual symbols in the level starts, I make a check to see if some individual symbols are not in fact characters like lim, sin cos or tan. This because findContours() in the preprocessing pipeline often does not see these functions as a single symbol, because they are not written together in a single line. If a match is found, all the symbol/stack/level/script level lists are updated appropiately </li>
+    <li> If the stack level is zero, the equations are simply appended with white space in between, adding superscript and subscripts where necessary (and curly brackets). Additionally, there is a check whether the script level makes sense with equation logic. For example, I assume that an equals sign can never be the first symbol in a subscript or superscript. If this is found, update the script levels appropriately </li>
+    <li> If we are in a stack, check what the middle symbol is (like a sum or a fraction) and add curly brackets and sub/superscript symbols where necessary </li>
+    <li> If one of the predicted symbols was a root sign, figure out when to close out that root sign </li>
+</ol>
 
 
+## Evaluating the full pipeline performance
+
+Although the EfficientNetB0 CNN performs well during training, with an accuracy of around 95% on the validation data, ultimately we want to know in how well the pipeline does at rendering a full equation. In order to gauge this, I compute the string distance betweeen the predicted and actual equation labels.
+The distance metric I've decided to use is the <a href=https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance>Damerau-Levenshtein</a> distance metric or <i> edit distance</i>, which computes the number of insertions, deletions, substitutions or transpositions that are necessary to change one of the labels into the other. Additionally, I normalize by the ground truth string length. A normalized distance of 0.5 therefore means that half of the string characters needed to be inserted, deleted, substituted or transported between the predicted and actual labels.
+
+The actual LaTeX string contains symbols like \\sin and \\theta, which should be counted the same as one-character symbols like 1 or 2. Therefore, I 're-label' the equations, changing out each symbol for ASCII characters, before computing the metric. 'Structural' parts of the equation string, like curly brackets or sub and superscript characters (like ^ and \_) which do not arise from the symbol prediction but are added in the postprocessing step, are also included in the distance metric calculation.
 
 ## Overall Conclusions
