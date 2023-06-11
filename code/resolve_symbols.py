@@ -422,6 +422,8 @@ def isolate_symbols_and_square(box_list, level_list, ind_symbols):
         new_symbol[sd_x//2:-sd_x//2,sd_y//2:-sd_y//2] = ind_symbols[i]
         ind_symbols[i] = new_symbol
         
+        #add slight blur, makes model predictions more reliable
+        ind_symbols[i] = cv2.blur(ind_symbols[i],(3,3))
                                      
     return ind_symbols, extend_list
 

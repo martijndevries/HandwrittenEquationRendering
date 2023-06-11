@@ -1,1129 +1,1129 @@
-eq 0::  \sqrt{b^{2} - 4 a c} 
-eq 1::  x_{1} + x_{2} = x_{3} 
-eq 2::  $\frac{n(n+1)}{2}+\frac{n(n-1)}{2}$ 
-eq 3::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 4::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 5::  \log_{2} 8 = 3 
-eq 6::  x^{2} + y^{2} \lt 1 
-eq 7::  \sqrt{b^{2} - 4 a c} 
-eq 8::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 9::  $y_{1} + y_{3} = \sqrt{z_{2}}$ 
-eq 10::  $((31 \div 52) - (21 \div 120)) \times 102 \geq 42$ 
-eq 11::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 12::  $\frac{a^2}{b^2} = a^k$ 
-eq 13::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 14::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 15::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 16::  x^{2} + y^{2} \lt 1 
-eq 17::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 18::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 19::  x_{1} + x_{2} = x_{3} 
-eq 20::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 21::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 0::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 1::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 2::  \sqrt{b^{2} - 4 a c} 
+eq 3::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 4::  $58 + 4 \geq 61$ 
+eq 5::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 6::  a + b + c + d + e 
+eq 7::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
+eq 8::  $b \neq 0$ 
+eq 9::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 10::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 11::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 12::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 13::  $x_{(k)}$ 
+eq 14::  x_{1} + x_{2} = x_{3} 
+eq 15::  e^{i \pi} + 1 = 0 
+eq 16::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 17::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 18::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 19::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 20::  3 0 \times 2 9 x^{2 8} 
+eq 21::  $3a + 2 \leq 5$ 
 eq 22::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 23::  $\frac{9}{5}$ 
-eq 24::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 25::  $0 \pm 52 \times (169 + 196 - 58)$ 
-eq 26::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 27::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 28::  \sqrt{b^{2} - 4 a c} 
-eq 29::  \tan z = \frac{\sin z}{\cos z} 
-eq 30::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 31::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 32::  $14 \times 87 \neq -196$ 
-eq 33::  e^{i \pi} + 1 = 0 
-eq 34::  x_{1} + x_{2} = x_{3} 
-eq 35::  a + b + c + d + e 
-eq 36::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 37::  $148 - 141 \neq -4$ 
-eq 38::  \sqrt{b^{2} - 4 a c} 
-eq 39::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 23::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 24::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 25::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 26::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 27::  $z=0$ 
+eq 28::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 29::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 30::  \tan z = \frac{\sin z}{\cos z} 
+eq 31::  \sqrt{b^{2} - 4 a c} 
+eq 32::  x_{1} + x_{2} = x_{3} 
+eq 33::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 34::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 35::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 36::  $\gamma = \pi-\alpha-\beta$ 
+eq 37::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 38::  a + b + c + d + e 
+eq 39::  $-\frac{1}{\pi}$ 
 eq 40::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 41::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 42::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 43::  $c^2 = (a-b)^2+2ab$ 
-eq 44::  $x_{(k)}$ 
-eq 45::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 46::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 47::  $\sin(- x) = -\sin(x)$ 
-eq 48::  $(n-1)$ 
-eq 49::  \tan z = \frac{\sin z}{\cos z} 
-eq 50::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 51::  $(51 - 53 + 31) - ((186 \times 21) \times (161 \div 103)) \neq -8248$ 
-eq 52::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 53::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 54::  x_{1} + x_{2} = x_{3} 
-eq 55::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 56::  \sqrt{b^{2} - 4 a c} 
-eq 57::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 58::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 59::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 60::  $32 \pm 12 \times 15$ 
-eq 61::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 62::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 63::  $\frac{4}{3}$ 
-eq 64::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 65::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 66::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 67::  $0 \pm 145 - 35$ 
-eq 68::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 69::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 70::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 71::  a + b + c + d + e 
-eq 72::  $(n+3)$ 
-eq 73::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 74::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 75::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 76::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 77::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 78::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 79::  $(a + c)^2 = 12$ 
-eq 80::  \tan z = \frac{\sin z}{\cos z} 
-eq 81::  $102 + 72 \geq 173$ 
-eq 82::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 83::  $2^{18}$ 
-eq 84::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 85::  F_{n} = F_{n - 1} + F_{n - 2} 
-eq 86::  $y = z x$ 
-eq 87::  x_{1} + x_{2} = x_{3} 
-eq 88::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 89::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 90::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 91::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 92::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 93::  3 0 \times 2 9 x^{2 8} 
-eq 94::  $\sum_0^\infty \frac{1}{n^2}$ 
-eq 95::  $n^2 - n + 41$ 
-eq 96::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 97::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 98::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 99::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 100::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 101::  $6 = 2^1(2^2-1)$ 
-eq 102::  $\theta + \pi$ 
-eq 103::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 104::  \tan z = \frac{\sin z}{\cos z} 
-eq 105::  $(a + b)^2 = a^2 + 2ab + b^2$ 
-eq 106::  \sqrt{b^{2} - 4 a c} 
-eq 107::  $x=\beta_{3}y_{3}+\ldots+\beta_{n+1}y_{n+1}$ 
-eq 108::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
-eq 109::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 110::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 111::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 112::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 113::  $y_1(x) = x^2$ 
-eq 114::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 115::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 116::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 117::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 118::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 41::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 42::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 43::  3 0 \times 2 9 x^{2 8} 
+eq 44::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 45::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 46::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 47::  $x^2 - dy^2 =\pm 1$ 
+eq 48::  x_{1} + x_{2} = x_{3} 
+eq 49::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 50::  a + b + c + d + e 
+eq 51::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 52::  $(x + 1) (8x^3 - 4x^2 - 4x + 1)=0$ 
+eq 53::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 54::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 55::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 56::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 57::  F_{n} = F_{n - 1} + F_{n - 2} 
+eq 58::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 59::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 60::  \log_{2} 8 = 3 
+eq 61::  a + b + c + d + e 
+eq 62::  $7 \pm (111 \div (28 + 23)) \times ((53 + 187) \times (179 \div 147))$ 
+eq 63::  $100 \pm 15 \times 16$ 
+eq 64::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 65::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 66::  e^{i \pi} + 1 = 0 
+eq 67::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 68::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
+eq 69::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 70::  F_{n} = F_{n - 1} + F_{n - 2} 
+eq 71::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 72::  $2^{n(n - 1)}$ 
+eq 73::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 74::  $a+c=b$ 
+eq 75::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 76::  $a^2-2ab$ 
+eq 77::  $x_2 = \frac{-1+i\sqrt{7}}{2}$ 
+eq 78::  x_{1} + x_{2} = x_{3} 
+eq 79::  $59 + 53 \neq -65$ 
+eq 80::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 81::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 82::  $\sum_0^\infty \frac{1}{n^2}$ 
+eq 83::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 84::  $120 - 14 - 107 \leq 213$ 
+eq 85::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 86::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 87::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 88::  a + b + c + d + e 
+eq 89::  x^{2} + y^{2} \lt 1 
+eq 90::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 91::  x_{1} + x_{2} = x_{3} 
+eq 92::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 93::  $10^{64}$ 
+eq 94::  a + b + c + d + e 
+eq 95::  $6 = 2^1(2^2-1)$ 
+eq 96::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 97::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 98::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 99::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 100::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 101::  3 0 \times 2 9 x^{2 8} 
+eq 102::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 103::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 104::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 105::  \sqrt{b^{2} - 4 a c} 
+eq 106::  $\sqrt{1+x}$ 
+eq 107::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 108::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 109::  \sqrt{b^{2} - 4 a c} 
+eq 110::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 111::  a + b + c + d + e 
+eq 112::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 113::  $8y_{i+1}$ 
+eq 114::  $a^2 - 2ab = (a - b)^2 - b^2$ 
+eq 115::  F_{n} = F_{n - 1} + F_{n - 2} 
+eq 116::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 117::  $2^n-1$ 
+eq 118::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
 eq 119::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 120::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 121::  $(x_1+y_1\sqrt{n})^k$ 
-eq 122::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} + z_{2} 
-eq 123::  \log_{2} 8 = 3 
-eq 124::  \log_{2} 8 = 3 
-eq 125::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 126::  \log_{2} 8 = 3 
-eq 127::  3 0 \times 2 9 x^{2 8} 
-eq 128::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 129::  $3^{n+1} + 2$ 
-eq 130::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 131::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 132::  x_{1} + x_{2} = x_{3} 
-eq 133::  $x^3 = 18x + 35$ 
-eq 134::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 135::  \sqrt{b^{2} - 4 a c} 
-eq 136::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 137::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 138::  $2^{17}$ 
-eq 139::  x^{2} + y^{2} \lt 1 
-eq 140::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 141::  3 0 \times 2 9 x^{2 8} 
-eq 142::  3 0 \times 2 9 x^{2 8} 
-eq 143::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
-eq 144::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
-eq 145::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 146::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 147::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 148::  $x - n$ 
+eq 120::  $y_{1} + y_{3} = \sqrt{z_{2}}$ 
+eq 121::  x_{1} + x_{2} = x_{3} 
+eq 122::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 123::  $y = \frac{1}{x^2 + 1}$ 
+eq 124::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 125::  $ac=1$ 
+eq 126::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 127::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 128::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 129::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 130::  $x^2 - x - 1 = 0$ 
+eq 131::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 132::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 133::  $b_0=1$ 
+eq 134::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 135::  e^{i \pi} + 1 = 0 
+eq 136::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 137::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 138::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 139::  $z^2 - 2z - 1 = 0$ 
+eq 140::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 141::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 142::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 143::  $((31 \div 52) - (21 \div 120)) \times 102 \geq 42$ 
+eq 144::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 145::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 146::  $\frac{(e^{i x} - e^{-i x})}{2} = i \sin(x)$ 
+eq 147::  \alpha_{n + 1} - 3 \beta = \frac{3}{2} \alpha_{n} + \beta - 3 \beta 
+eq 148::  $(18 + 22) \div 92 \neq 0$ 
 eq 149::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 150::  \sqrt{b^{2} - 4 a c} 
-eq 151::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 152::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 153::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 154::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 155::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 156::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 157::  $89 \times ((155 \times 50) \div 132) \neq -1372$ 
-eq 158::  e^{i \pi} + 1 = 0 
-eq 159::  $k_n=1$ 
-eq 160::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 161::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 162::  3 0 \times 2 9 x^{2 8} 
-eq 163::  3 0 \times 2 9 x^{2 8} 
-eq 164::  $12 \div 75 \geq 0$ 
-eq 165::  $\sin^2(x)$ 
-eq 166::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 167::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 168::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 169::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 170::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 171::  $\sqrt{1+\frac{1}{\sqrt{2}}} +\sqrt{1-\frac{1}{\sqrt{2}}}$ 
-eq 172::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 173::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} a_{n} + \beta - 3 \beta 
-eq 174::  $\theta = \frac {n \times 360} {60 \times 1000}$ 
-eq 175::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 176::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 177::  \sqrt{b^{2} - 4 a c} 
-eq 178::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 179::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 180::  $\cos (a + b) = \cos a \cos b - \sin a \sin b$ 
+eq 150::  $x^2+x+1 = 0$ 
+eq 151::  $\frac{1}{500}$ 
+eq 152::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 153::  $37 \times 45 \geq 1664$ 
+eq 154::  $k_n=1$ 
+eq 155::  x_{1} + x_{2} = x_{3} 
+eq 156::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 157::  x_{1} + x_{2} = x_{3} 
+eq 158::  3 0 \times 2 9 x^{2 8} 
+eq 159::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 160::  $192 - 166 \neq 12$ 
+eq 161::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 162::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 163::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 164::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 165::  a + b + c + d + e 
+eq 166::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 167::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 168::  $\log_c(a - b) = \log_c(c^{(\log_ca - \log_cb)} - 1 )+ \log_cb$ 
+eq 169::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 170::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 171::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 172::  $y=x^{n}$ 
+eq 173::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 174::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 175::  $6a^2$ 
+eq 176::  $\sin^2(x)$ 
+eq 177::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 178::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 179::  \sqrt{b^{2} - 4 a c} 
+eq 180::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
 eq 181::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 182::  a + b + c + d + e 
-eq 183::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 184::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 185::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 186::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 187::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 188::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 189::  $\frac{1}{3}\frac{1}{3}\gamma$ 
-eq 190::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 191::  $-\frac{1}{\pi}$ 
-eq 192::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 193::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 194::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 182::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 183::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 184::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 185::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 186::  $((26 \div 128) + 50) - (183 \div 29) \neq -6$ 
+eq 187::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 188::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 189::  $((117 \times 54) \div (141 \times 124)) - ((70 \div 193) \div 159) \geq 0$ 
+eq 190::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 191::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 192::  $\sqrt{1+\frac{1}{\sqrt{2}}} +\sqrt{1-\frac{1}{\sqrt{2}}}$ 
+eq 193::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 194::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
 eq 195::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 196::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 197::  $x_2 = \frac{-1+i\sqrt{7}}{2}$ 
-eq 198::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 199::  3 0 \times 2 9 x^{2 8} 
-eq 200::  3 0 \times 2 9 x^{2 8} 
-eq 201::  $((117 \times 54) \div (141 \times 124)) - ((70 \div 193) \div 159) \geq 0$ 
-eq 202::  $y^2=\frac{x^3}{2a-x}$ 
-eq 203::  a + b + c + d + e 
-eq 204::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 205::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 206::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 207::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 208::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 209::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 210::  a + b + c + d + e 
-eq 211::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 212::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 213::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 214::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 215::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 216::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 217::  $a^2 - 2ab = (a - b)^2 - b^2$ 
-eq 218::  $(2-1-1)$ 
-eq 219::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 220::  $(72 \div 151) \div (10 \times 152) \leq 0$ 
-eq 221::  x^{2} + y^{2} \lt 1 
-eq 222::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 223::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 224::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 225::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 226::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 227::  \sqrt{b^{2} - 4 a c} 
-eq 228::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 196::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 197::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 198::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 199::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 200::  x^{2} + y^{2} \lt 1 
+eq 201::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 202::  $1 - 1 + 1 - 1 + \ldots$ 
+eq 203::  $76 \pm ((41 + 118) \times 124) \times 130$ 
+eq 204::  F_{n} = F_{n - 1} + F_{n - 2} 
+eq 205::  $y^2=\frac{x^3}{2a-x}$ 
+eq 206::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 207::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 208::  $x_4 = -\sqrt{2}$ 
+eq 209::  $x=\alpha_{1} y_{1}+\ldots+\alpha_{n+1}y_{n+1}$ 
+eq 210::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 211::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 212::  $(81 + (38 + 107)) \div 151 \leq 78$ 
+eq 213::  x_{1} + x_{2} = x_{3} 
+eq 214::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 215::  3 0 \times 2 9 x^{2 8} 
+eq 216::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 217::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 218::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 219::  x_{1} + x_{2} = x_{3} 
+eq 220::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 221::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 222::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 223::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 224::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 225::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 226::  3 0 \times 2 9 x^{2 8} 
+eq 227::  $c^2 = (a-b)^2+2ab$ 
+eq 228::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
 eq 229::  x_{1} + x_{2} = x_{3} 
-eq 230::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 231::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 232::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 233::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 234::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 235::  a + b + c + d + e 
-eq 236::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 237::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 238::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 239::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 240::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 241::  $\frac{1}{10}$ 
-eq 242::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 243::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 244::  $126 - 48 = 78$ 
-eq 245::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 246::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 247::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
+eq 230::  $\frac{\beta}{\alpha-1}$ 
+eq 231::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 232::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 233::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 234::  a + b + c + d + e 
+eq 235::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 236::  x_{1} + x_{2} = x_{3} 
+eq 237::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 238::  a + b + c + d + e 
+eq 239::  a + b + c + d + e 
+eq 240::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 241::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 242::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 243::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 244::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 245::  e^{i \pi} + 1 = 0 
+eq 246::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 247::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
 eq 248::  \sin x - \sin y - \sin \left( x - y \right) 
 eq 249::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 250::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 251::  $b = \sqrt{2}$ 
-eq 252::  $x=\alpha_{1} y_{1}+\ldots+\alpha_{n+1}y_{n+1}$ 
-eq 253::  \int \left( 2^{x} - 3 e^{x} \right) d_{x} 
-eq 254::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 255::  $30 - 180 + 70 \neq 294$ 
+eq 250::  $2 {k} {\pi}$ 
+eq 251::  x_{1} + x_{2} = x_{3} 
+eq 252::  $e = 2$ 
+eq 253::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 254::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 255::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
 eq 256::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 257::  $x+dx$ 
-eq 258::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 259::  a + b + c + d + e 
-eq 260::  \sqrt{b^{2} - 4 a c} 
-eq 261::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 262::  $58 + 4 \geq 61$ 
-eq 263::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 264::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 265::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 266::  F_{n} = F_{n - 1} + F_{n - 2} 
-eq 267::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 268::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 269::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 270::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 271::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 272::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 273::  a + b + c + d + e 
-eq 274::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 275::  a + b + c + d + e 
-eq 276::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
-eq 277::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 278::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 279::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 280::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 281::  \log_{2} 8 = 3 
-eq 282::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 283::  \sqrt{b^{2} - 4 a c} 
-eq 284::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 285::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 286::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 257::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 258::  \log_{2} 8 = 3 
+eq 259::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 260::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 261::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 262::  $\sin (nx)$ 
+eq 263::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 264::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 265::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 266::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 267::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 268::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 269::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 270::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 271::  $32 \pm 12 \times 15$ 
+eq 272::  $\theta = \frac {n \times 360} {60 \times 1000}$ 
+eq 273::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 274::  $a_2=-1$ 
+eq 275::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 276::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 277::  $n-1$ 
+eq 278::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 279::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 280::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 281::  $76 \pm (102 + 150) \times 56$ 
+eq 282::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 283::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 284::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 285::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 286::  $\frac{a^2}{b^2} = a^k$ 
 eq 287::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 288::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 289::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 290::  $\sqrt{1+x}$ 
-eq 291::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 292::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 293::  \sqrt{b^{2} - 4 a c} 
-eq 294::  $0=\frac{d^2 y}{dx^2}$ 
-eq 295::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 296::  $60 - 136 \geq -76$ 
-eq 297::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 298::  $x^3 + 3x^2\sqrt{3} - 3x - \sqrt{3}$ 
-eq 299::  \sqrt{b^{2} - 4 a c} 
-eq 300::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 301::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 302::  F_{n} = F_{n - 1} + F_{n - 2} 
-eq 303::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 304::  $c(0) = 1$ 
-eq 305::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 306::  x_{1} + x_{2} = x_{3} 
-eq 307::  $b=a^2+c^2$ 
-eq 308::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 309::  $dx^3+(4e-c^2)x^2-2cdx-d^2 = 0$ 
-eq 310::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 311::  \sqrt{b^{2} - 4 a c} 
-eq 312::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 313::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 314::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 315::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 316::  $\cos(2x)=\cos^2(x)-\sin^2(x)$ 
-eq 317::  $n^{\log_2(3)}$ 
-eq 318::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 319::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 320::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 321::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 322::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 323::  $2^{n(n - 1)}$ 
-eq 324::  3 0 \times 2 9 x^{2 8} 
+eq 288::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 289::  $((56 \times 52) \div 135) + (34 - (74 \times 92)) \geq -6752$ 
+eq 290::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 291::  $\phi(x)$ 
+eq 292::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 293::  x^{i + 2 j \times k^{3} - \frac{j}{2 i}} 
+eq 294::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 295::  \tan z = \frac{\sin z}{\cos z} 
+eq 296::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 297::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 298::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 299::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 300::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 301::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 302::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 303::  $10x = 3$ 
+eq 304::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 305::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 306::  $\cos (a + b) = \cos a \cos b - \sin a \sin b$ 
+eq 307::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 308::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 309::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 310::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 311::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 312::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 313::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 314::  $\frac{4}{3}$ 
+eq 315::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 316::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 317::  $148 - 141 \neq -4$ 
+eq 318::  $(n-1)$ 
+eq 319::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 320::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 321::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 322::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 323::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 324::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
 eq 325::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 326::  $ac=1$ 
-eq 327::  $40 - (134 - (144 \div 154)) \geq -93$ 
-eq 328::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 329::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 330::  x^{i + 2 j \times k^{3} - \frac{j}{2 i}} 
-eq 331::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 332::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 333::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 334::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 335::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 336::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 337::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 338::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 339::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 340::  $\frac{b-a}{n}\leq\alpha$ 
-eq 341::  $199 - 151 = 48$ 
-eq 342::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 343::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 344::  $n-1$ 
-eq 345::  $a+c=b$ 
-eq 346::  a + b + c + d + e 
-eq 347::  $(\gamma )$ 
-eq 348::  x_{1} + x_{2} = x_{3} 
-eq 349::  $4^2 = 2^4$ 
-eq 350::  $2^{69}$ 
-eq 351::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 352::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 353::  $(81 + (38 + 107)) \div 151 \leq 78$ 
-eq 354::  $x^2 + 2x\sqrt{2} + 1$ 
-eq 355::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 356::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 357::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 358::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 359::  $x^{-4}$ 
-eq 360::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 361::  3 0 \times 2 9 x^{2 8} 
-eq 362::  $x \times (- \infty)$ 
-eq 363::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 364::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
-eq 365::  \sqrt{b^{2} - 4 a c} 
-eq 366::  $x^5+x+a$ 
-eq 367::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 368::  $7 \times 154 \neq -1362$ 
-eq 369::  F_{n} = F_{n - 1} + F_{n - 2} 
-eq 370::  $37 \times 45 \geq 1664$ 
-eq 371::  $2^5+2+1$ 
-eq 372::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 373::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 374::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 375::  $189 \pm 159 \times (50 \times 99)$ 
-eq 376::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 377::  \tan z = \frac{\sin z}{\cos z} 
-eq 378::  e^{i \pi} + 1 = 0 
-eq 379::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 380::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 381::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 382::  \log_{2} 8 = 3 
-eq 383::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 384::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 385::  $\sin (a - b) = \sin a \cos b - \cos a \sin b$ 
-eq 386::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 387::  3 0 \times 2 9 x^{2 8} 
-eq 388::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 389::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 326::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 327::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 328::  \sqrt{b^{2} - 4 a c} 
+eq 329::  $\theta_2=\theta$ 
+eq 330::  x^{2} + y^{2} \lt 1 
+eq 331::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 332::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 333::  $151 \pm 143 \div 97$ 
+eq 334::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 335::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 336::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 337::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 338::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 339::  $2^{18}$ 
+eq 340::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 341::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 342::  x_{1} + x_{2} = x_{3} 
+eq 343::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 344::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 345::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 346::  $c = \sqrt{a^2+b^2-2ab\cos\gamma}$ 
+eq 347::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 348::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 349::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 350::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 351::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 352::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 353::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 354::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 355::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 356::  $x^{\frac{1}{2} (1 + \frac{1}{2^2}) (1 + \frac{1}{2^4}) (1 + \frac{1}{2^8})}$ 
+eq 357::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 358::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 359::  $x^2 + 2x\sqrt{2} + 1$ 
+eq 360::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 361::  $ax^{2} + 2bx + c = 0$ 
+eq 362::  $\frac{1}{10}$ 
+eq 363::  $186 \pm 6 + 98 + 176 + 92$ 
+eq 364::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 365::  $\frac{b-a}{n}\leq\alpha$ 
+eq 366::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 367::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 368::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 369::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 370::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 371::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 372::  $-2x$ 
+eq 373::  $(n-1)2^{n-4}$ 
+eq 374::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 375::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
+eq 376::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 377::  $10^{-12}$ 
+eq 378::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 379::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 380::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 381::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 382::  $189 \pm 159 \times (50 \times 99)$ 
+eq 383::  \log_{2} 8 = 3 
+eq 384::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
+eq 385::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 386::  $n^3 = n^{\log_{2}8}$ 
+eq 387::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 388::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 389::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
 eq 390::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 391::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 392::  \sqrt{b^{2} - 4 a c} 
-eq 393::  \tan z = \frac{\sin z}{\cos z} 
-eq 394::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 395::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 396::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 397::  \sqrt{b^{2} - 4 a c} 
-eq 398::  \sqrt{b^{2} - 4 a c} 
-eq 399::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 400::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 401::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 402::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 403::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 404::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 405::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 406::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 407::  $78 \pm 5 \times 47$ 
-eq 408::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 409::  e^{i \pi} + 1 = 0 
-eq 410::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 411::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 412::  $42 - 85 - 18 \geq -25$ 
-eq 413::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 414::  x_{1} + x_{2} = x_{3} 
-eq 415::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 416::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 417::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 418::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 419::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 420::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 421::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 422::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 423::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 391::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 392::  $3n-5$ 
+eq 393::  a + b + c + d + e 
+eq 394::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 395::  $n \log(n)$ 
+eq 396::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 397::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 398::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 399::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 400::  $x^5+x+a$ 
+eq 401::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 402::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 403::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 404::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 405::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 406::  $(29 - 24 + 169) \times 88 \leq -14431$ 
+eq 407::  a + b + c + d + e 
+eq 408::  \tan z = \frac{\sin z}{\cos z} 
+eq 409::  x_{1} + x_{2} = x_{3} 
+eq 410::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 411::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 412::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 413::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 414::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 415::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 416::  $172 - 111 - 55 - 187 \neq -83$ 
+eq 417::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 418::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 419::  x_{1} + x_{2} = x_{3} 
+eq 420::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 421::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 422::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 423::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
 eq 424::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 425::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 426::  x_{1} + x_{2} = x_{3} 
-eq 427::  $y+16=x$ 
-eq 428::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 429::  x_{1} + x_{2} = x_{3} 
-eq 430::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 431::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 432::  $146 \times (101 + 157 - 181) = 11242$ 
-eq 433::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 434::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 435::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 436::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 437::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 425::  $\frac{\sqrt{3}}{4}$ 
+eq 426::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 427::  \sqrt{b^{2} - 4 a c} 
+eq 428::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
+eq 429::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 430::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 431::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 432::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 433::  \sqrt{b^{2} - 4 a c} 
+eq 434::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 435::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 436::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 437::  \sqrt{b^{2} - 4 a c} 
 eq 438::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 439::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 440::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 441::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 442::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 443::  $19 \times 7 \leq 133$ 
-eq 444::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 445::  $x^n=z$ 
-eq 446::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 447::  x_{1} + x_{2} = x_{3} 
-eq 448::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 449::  $\sqrt{2+\sqrt{2}}$ 
-eq 450::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 451::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 452::  x_{1} + x_{2} = x_{3} 
-eq 453::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 454::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 455::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 456::  $x^{\frac{1}{2} (1 + \frac{1}{2^2}) (1 + \frac{1}{2^4}) (1 + \frac{1}{2^8})}$ 
-eq 457::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 458::  $e^{-1}$ 
-eq 459::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 460::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 461::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 462::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 463::  \sqrt{b^{2} - 4 a c} 
-eq 464::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 465::  3 0 \times 2 9 x^{2 8} 
-eq 466::  x_{1} + x_{2} = x_{3} 
-eq 467::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 468::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 469::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 470::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 471::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 472::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 473::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 474::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 475::  a + b + c + d + e 
-eq 476::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 477::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 478::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 479::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 480::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 481::  x^{i + 2 j \times k^{3} - \frac{j}{2 i}} 
-eq 482::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 483::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 484::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 485::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 486::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 487::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 439::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 440::  x_{1} + x_{2} = x_{3} 
+eq 441::  x_{1} + x_{2} = x_{3} 
+eq 442::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 443::  $n^{\log_2(3)}$ 
+eq 444::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 445::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 446::  3 0 \times 2 9 x^{2 8} 
+eq 447::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 448::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 449::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 450::  $c_1=a_{11}$ 
+eq 451::  3 0 \times 2 9 x^{2 8} 
+eq 452::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 453::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 454::  $y(0) = \alpha_1$ 
+eq 455::  $2^{69}$ 
+eq 456::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 457::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 458::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 459::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 460::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 461::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 462::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 463::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 464::  3 0 \times 2 9 x^{2 8} 
+eq 465::  x_{1} + x_{2} = x_{3} 
+eq 466::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 467::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 468::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 469::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
+eq 470::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 471::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 472::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 473::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 474::  \sqrt{b^{2} - 4 a c} 
+eq 475::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 476::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 477::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 478::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 479::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 480::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 481::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 482::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 483::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 484::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 485::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 486::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 487::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
 eq 488::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 489::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 490::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 491::  a + b + c + d + e 
-eq 492::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 493::  a + b + c + d + e 
-eq 494::  3 0 \times 2 9 x^{2 8} 
-eq 495::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 496::  \sqrt{b^{2} - 4 a c} 
-eq 497::  3 0 \times 2 9 x^{2 8} 
-eq 498::  x_{1} + x_{2} = x_{3} 
+eq 489::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 490::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 491::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 492::  x_{1} + x_{2} = x_{3} 
+eq 493::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 494::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 495::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 496::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 497::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 498::  a + b + c + d + e 
 eq 499::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 500::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 501::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 502::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 503::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 504::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 505::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 506::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 507::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 508::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 509::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 510::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 511::  3 0 \times 2 9 x^{2 8} 
-eq 512::  a + b + c + d + e 
-eq 513::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 514::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 515::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 516::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 517::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 518::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 519::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 520::  x_{1} + x_{2} = x_{3} 
-eq 521::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 522::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 523::  \sqrt{b^{2} - 4 a c} 
-eq 524::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 525::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 526::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 527::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 528::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 529::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 530::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 531::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 532::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 533::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 534::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 535::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 536::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 537::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 538::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 539::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 540::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 541::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 542::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 543::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 544::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 545::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 546::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 547::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 548::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 549::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 550::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 551::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 552::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 553::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 554::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 555::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 556::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 500::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 501::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 502::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 503::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 504::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 505::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 506::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 507::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 508::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 509::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 510::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 511::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 512::  x_{1} + x_{2} = x_{3} 
+eq 513::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 514::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 515::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 516::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} + z_{2} 
+eq 517::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 518::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 519::  \sqrt{b^{2} - 4 a c} 
+eq 520::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 521::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 522::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 523::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 524::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 525::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 526::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 527::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 528::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 529::  3 0 \times 2 9 x^{2 8} 
+eq 530::  x_{1} + x_{2} = x_{3} 
+eq 531::  3 0 \times 2 9 x^{2 8} 
+eq 532::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 533::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 534::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 535::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 536::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 537::  a + b + c + d + e 
+eq 538::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 539::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 540::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 541::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 542::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 543::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 544::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 545::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 546::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 547::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 548::  3 0 \times 2 9 x^{2 8} 
+eq 549::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 550::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 551::  x_{1} + x_{2} = x_{3} 
+eq 552::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 553::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 554::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 555::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 556::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
 eq 557::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 558::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 559::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 560::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 561::  a + b + c + d + e 
+eq 558::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 559::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 560::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 561::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
 eq 562::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 563::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 564::  x_{1} + x_{2} = x_{3} 
-eq 565::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 566::  \alpha_{n + 1} - 3 \beta = \frac{3}{2} \alpha_{n} + \beta - 3 \beta 
-eq 567::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 568::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 569::  a + b + c + d + e 
-eq 570::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 571::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 572::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 573::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 574::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 575::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 563::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 564::  3 0 \times 2 9 x^{2 8} 
+eq 565::  a + b + c + d + e 
+eq 566::  x_{1} + x_{2} = x_{3} 
+eq 567::  3 0 \times 2 9 x^{2 8} 
+eq 568::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 569::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 570::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 571::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 572::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 573::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 574::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 575::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
 eq 576::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 577::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 578::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 579::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 580::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 581::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 582::  a + b + c + d + e 
-eq 583::  \sqrt{b^{2} - 4 a c} 
-eq 584::  \sqrt{b^{2} - 4 a c} 
-eq 585::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 586::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 587::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 588::  a + b + c + d + e 
-eq 589::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 590::  x_{1} + x_{2} = x_{3} 
-eq 591::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 592::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 593::  3 0 \times 2 9 x^{2 8} 
-eq 594::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 595::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 596::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 597::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 598::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 599::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 600::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 577::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 578::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 579::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 580::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 581::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 582::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 583::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 584::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 585::  x_{1} + x_{2} = x_{3} 
+eq 586::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 587::  x_{1} + x_{2} = x_{3} 
+eq 588::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 589::  \sqrt{b^{2} - 4 a c} 
+eq 590::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 591::  x_{1} + x_{2} = x_{3} 
+eq 592::  3 0 \times 2 9 x^{2 8} 
+eq 593::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 594::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 595::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 596::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 597::  a + b + c + d + e 
+eq 598::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 599::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 600::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
 eq 601::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 602::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 603::  3 0 \times 2 9 x^{2 8} 
-eq 604::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 605::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 606::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 607::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 608::  x_{1} + x_{2} = x_{3} 
-eq 609::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 610::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 611::  3 0 \times 2 9 x^{2 8} 
-eq 612::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 613::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 614::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 615::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 616::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 617::  a + b + c + d + e 
-eq 618::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 619::  a + b + c + d + e 
-eq 620::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 621::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 622::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 623::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 624::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 602::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 603::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 604::  a + b + c + d + e 
+eq 605::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 606::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 607::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 608::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 609::  \sqrt{b^{2} - 4 a c} 
+eq 610::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 611::  x^{i + 2 j \times k^{3} - \frac{j}{2 i}} 
+eq 612::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 613::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 614::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 615::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 616::  a + b + c + d + e 
+eq 617::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 618::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 619::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 620::  x_{1} + x_{2} = x_{3} 
+eq 621::  a + b + c + d + e 
+eq 622::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 623::  x_{1} + x_{2} = x_{3} 
+eq 624::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
 eq 625::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 626::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 626::  \sin x - \sin y - \sin \left( x - y \right) 
 eq 627::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 628::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
-eq 629::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 630::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 631::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 632::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 633::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 634::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 635::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 636::  a + b + c + d + e 
-eq 637::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 638::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 639::  x_{1} + x_{2} = x_{3} 
-eq 640::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 641::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 642::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 643::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 644::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 645::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 646::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 647::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 648::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 649::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 650::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 651::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 652::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 653::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 654::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 628::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
+eq 629::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 630::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 631::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 632::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 633::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 634::  x_{1} + x_{2} = x_{3} 
+eq 635::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 636::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 637::  a + b + c + d + e 
+eq 638::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 639::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 640::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 641::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 642::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 643::  a + b + c + d + e 
+eq 644::  3 0 \times 2 9 x^{2 8} 
+eq 645::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 646::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 647::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 648::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 649::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 650::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 651::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 652::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 653::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 654::  x_{i} - x_{i + 1} + x_{i + 2} 
 eq 655::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 656::  F_{n} = F_{n - 1} + F_{n - 2} 
-eq 657::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 658::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 659::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 660::  3 0 \times 2 9 x^{2 8} 
-eq 661::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 656::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 657::  x_{1} + x_{2} = x_{3} 
+eq 658::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 659::  a + b + c + d + e 
+eq 660::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 661::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
 eq 662::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 663::  a + b + c + d + e 
+eq 663::  x_{1} + x_{2} = x_{3} 
 eq 664::  3 0 \times 2 9 x^{2 8} 
-eq 665::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 666::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 667::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 668::  3 0 \times 2 9 x^{2 8} 
-eq 669::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 670::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 671::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 672::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 673::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 674::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 675::  \sqrt{b^{2} - 4 a c} 
-eq 676::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 665::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 666::  x_{1} + x_{2} = x_{3} 
+eq 667::  3 0 \times 2 9 x^{2 8} 
+eq 668::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 669::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 670::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 671::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 672::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 673::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 674::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 675::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 676::  \frac{1}{a} F \left( a x + b \right) + C 
 eq 677::  3 0 \times 2 9 x^{2 8} 
 eq 678::  \sqrt{b^{2} - 4 a c} 
-eq 679::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 680::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 681::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
-eq 682::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 683::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 684::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 685::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 686::  a + b + c + d + e 
-eq 687::  \sqrt{b^{2} - 4 a c} 
-eq 688::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 689::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 690::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 691::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 692::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 693::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 694::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 695::  x_{1} + x_{2} = x_{3} 
-eq 696::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 697::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 698::  3 0 \times 2 9 x^{2 8} 
-eq 699::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 700::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 701::  a + b + c + d + e 
-eq 702::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 703::  a + b + c + d + e 
-eq 704::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 705::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 706::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 707::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 708::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 709::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 710::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 711::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 712::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 713::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 714::  3 0 \times 2 9 x^{2 8} 
-eq 715::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
-eq 716::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 717::  \sqrt{b^{2} - 4 a c} 
-eq 718::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 719::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 720::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 721::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 679::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 680::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 681::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 682::  \sqrt{b^{2} - 4 a c} 
+eq 683::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 684::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 685::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 686::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 687::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 688::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 689::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 690::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 691::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 692::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 693::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 694::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 695::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 696::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 697::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 698::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 699::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 700::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 701::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 702::  x_{1} + x_{2} = x_{3} 
+eq 703::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 704::  a + b + c + d + e 
+eq 705::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 706::  \sqrt{b^{2} - 4 a c} 
+eq 707::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 708::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 709::  \sqrt{b^{2} - 4 a c} 
+eq 710::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 711::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 712::  \sqrt{b^{2} - 4 a c} 
+eq 713::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 714::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 715::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 716::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 717::  x_{1} + x_{2} = x_{3} 
+eq 718::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 719::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 720::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
+eq 721::  3 0 \times 2 9 x^{2 8} 
 eq 722::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 723::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 724::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 725::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 726::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 723::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 724::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 725::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 726::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
 eq 727::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 728::  x_{1} + x_{2} = x_{3} 
-eq 729::  \sqrt{b^{2} - 4 a c} 
-eq 730::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 731::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 732::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 733::  \sqrt{b^{2} - 4 a c} 
-eq 734::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 728::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
+eq 729::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 730::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 731::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 732::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 733::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 734::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
 eq 735::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
-eq 736::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 737::  x_{i} - x_{i + 1} + x_{i + 2} 
-eq 738::  x_{1} + x_{2} = x_{3} 
-eq 739::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 740::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 741::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 742::  \int \left( 2^{x} - 3 e^{x} \right) d x 
-eq 743::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
-eq 744::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 745::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
-eq 746::  3 0 \times 2 9 x^{2 8} 
-eq 747::  \sqrt{b^{2} - 4 a c} 
-eq 748::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 749::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 750::  \frac{1}{a} F \left( a x + b \right) + C 
-eq 751::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 752::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 753::  \frac{\sin B + \sin C}{\cos B + \cos C} 
-eq 754::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 755::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
-eq 756::  \sin x - \sin y - \sin \left( x - y \right) 
-eq 757::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 758::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
-eq 759::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 760::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 761::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 762::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 763::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 764::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 765::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
-eq 766::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 767::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
-eq 768::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
-eq 769::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 770::  x_{1} - x_{2} + y_{1} - y_{2} + z_{1} - z_{2} 
-eq 771::  \left( x^{3} - x^{2} - x \right) \left( 2 x - 7 \right) 
-eq 772::  x_{1} + x_{2} = x_{3} 
-eq 773::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
-eq 774::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
-eq 775::  $a_2=-1$ 
-eq 776::  $x^n=z$ 
-eq 777::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 778::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 779::  $(x + 1) (8x^3 - 4x^2 - 4x + 1)=0$ 
-eq 780::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 781::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 782::  \int_a^b \frac {\sqrt x} 2 d x 
-eq 783::  $y = \frac { 1}{Y}$ 
-eq 784::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 785::  $40 - (134 - (144 \div 154)) \geq -93$ 
-eq 786::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 787::  $\cos(4a) = 8\cos^4(a) - 8\cos^2(a) +1$ 
-eq 788::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
-eq 789::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 790::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 791::  $\sin(- x) = -\sin(x)$ 
-eq 792::  $4^2 = 2^4$ 
-eq 793::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 794::  $(n-1)2^{n-4}$ 
-eq 795::  $y= y_0+t^mY$ 
-eq 796::  x^{2} + y^{2} \lt 1 
-eq 797::  $58 + 4 \geq 61$ 
-eq 798::  $\pm i a$ 
-eq 799::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 800::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 801::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 802::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 803::  $76 \pm (102 + 150) \times 56$ 
-eq 804::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
-eq 805::  $((117 \times 54) \div (141 \times 124)) - ((70 \div 193) \div 159) \geq 0$ 
-eq 806::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 807::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 808::  $3 = \sqrt{6+\sqrt{6+\sqrt{6+\sqrt{6+\ldots}}}}$ 
-eq 809::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 810::  \tan z = \frac{\sin z}{\cos z} 
-eq 811::  $2 {k} {\pi}$ 
-eq 812::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 813::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 814::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
-eq 815::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 816::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 817::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
-eq 818::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
-eq 819::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 820::  $7 \pm (111 \div (28 + 23)) \times ((53 + 187) \times (179 \div 147))$ 
-eq 821::  $\pi(e_1)$ 
+eq 736::  \log_{2} 8 + \log_{3} 9 + \log_{4} 1 6 
+eq 737::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 738::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 739::  \sqrt{b^{2} - 4 a c} 
+eq 740::  \frac{\tan \alpha - \tan \beta}{1 + \tan \alpha \tan \beta} 
+eq 741::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 742::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 743::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 744::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 745::  a + b + c + d + e 
+eq 746::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 747::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} \alpha_{n} + \beta - 3 \beta 
+eq 748::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 749::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 750::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 751::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 752::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 753::  x_{i} - x_{i + 1} + x_{i + 2} 
+eq 754::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 755::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 756::  \lim_{x \rightarrow - 1} \frac{x^{3} + 1}{x + 1} 
+eq 757::  \int \left( 2^{x} - 3 e^{x} \right) d x 
+eq 758::  \alpha_{n + 1} - 3 \beta = \frac{2}{3} a_{n} + \beta - 3 \beta 
+eq 759::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 760::  \frac{\sin B + \sin C}{\cos B + \cos C} 
+eq 761::  \sqrt{x - y - z + x^{2} + y^{2} + z^{2}} 
+eq 762::  \sqrt{b^{2} - 4 a c} 
+eq 763::  \sqrt{1 + \sqrt{2 + \sqrt{3 + \sqrt{4}}}} 
+eq 764::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 765::  \frac{2 \tan \alpha}{1 - \tan^{2} \alpha} 
+eq 766::  \lim_{x \rightarrow \frac{1}{4}} \frac{1 - 4^{x - \frac{1}{4}}}{1 - 4 x} 
+eq 767::  \frac{\sin \theta + \cos \theta + \tan \theta}{x + y + z} 
+eq 768::  1 + \frac{1}{1 !} + \frac{1}{2 !} + \frac{1}{3 !} + \frac{1}{4 !} 
+eq 769::  x^{i + 2 j \times k^{3} - 2 \frac{j}{i}} 
+eq 770::  \sin x - \sin y - \sin \left( x - y \right) 
+eq 771::  \lim_{x \rightarrow \frac{\pi}{2} + 0} \tan x = - \infty 
+eq 772::  \frac{1}{a} F \left( a x + b \right) + C 
+eq 773::  \sqrt{b^{2} - 4 a c} 
+eq 774::  \sqrt{b^{2} - 4 a c} 
+eq 775::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 776::  \sum_{i = 2 n + 3 m}^{1 0} i x 
+eq 777::  $\frac{1}{3}\frac{1}{3}\gamma$ 
+eq 778::  $37 \times 45 \geq 1664$ 
+eq 779::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 780::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 781::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
+eq 782::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 783::  \sum_{i = 2 n + 3 m}^{1 0} i x 
+eq 784::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 785::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 786::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 787::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 788::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 789::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 790::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 791::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 792::  $-\frac{1}{\pi}$ 
+eq 793::  $12 \pm ((29 \times 6) + 22) + ((47 \times 133) - (86 - 187))$ 
+eq 794::  $n = 0$ 
+eq 795::  $\frac{9}{5}$ 
+eq 796::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 797::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 798::  $76 \pm ((41 + 118) \times 124) \times 130$ 
+eq 799::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 800::  $y = z x$ 
+eq 801::  $40 - (134 - (144 \div 154)) \geq -93$ 
+eq 802::  $32 \pm 12 \times 15$ 
+eq 803::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 804::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 805::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 806::  $(2 + 3i)$ 
+eq 807::  $(x_1+y_1\sqrt{n})^k$ 
+eq 808::  $x_0, y_0, z_0$ 
+eq 809::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 810::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 811::  $172 - 111 - 55 - 187 \neq -83$ 
+eq 812::  $c(0) = 1$ 
+eq 813::  $y \neq x$ 
+eq 814::  $x=\beta_{3}y_{3}+\ldots+\beta_{n+1}y_{n+1}$ 
+eq 815::  $(166 - 122 + 32) + ((106 \div 30) \div (30 \div 18)) \geq 77$ 
+eq 816::  $\frac{y_2x_2-y_1x_1}{n}$ 
+eq 817::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 818::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 819::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 820::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 821::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
 eq 822::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 823::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 824::  $0 \pm 145 - 35$ 
-eq 825::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 826::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 827::  $\sin (nx)$ 
-eq 828::  $\frac{4}{3}$ 
-eq 829::  $\frac1{n^{k+2}}$ 
-eq 830::  $x=\alpha_{1} y_{1}+\ldots+\alpha_{n+1}y_{n+1}$ 
-eq 831::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 832::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 833::  $ p^{3} - ( x^{2} + x y + y^{2} ) p^{2} + ( x^{3} y + x^{2} y^{2} +x y^{3} ) p - x^{3} y^{3} = 0 $ 
-eq 834::  \tan z = \frac{\sin z}{\cos z} 
-eq 835::  $(2-1)$ 
-eq 836::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 837::  $15 \div ((76 \div 10) + (199 - 89)) > 0$ 
-eq 838::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 839::  $(29 - 24 + 169) \times 88 \leq -14431$ 
-eq 840::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 841::  \tan z = \frac{\sin z}{\cos z} 
-eq 842::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 843::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 844::  $(69 + 177 \times 136) + (117 \div 140) > 5612$ 
-eq 845::  $ \log z = \log r + i ( \theta + 2 n \pi ) $ 
-eq 846::  $ \log x(t) = \sum_{k=1}^{\infty} \frac{a_{k}}{k!} ( i t )^{ k } - \frac{1}{2} (\sum_{k=1}^{\infty} \frac{a_{k}}{k!} ( i t )^{ k } )^{2} + \frac{1}{3} (\sum_{k=1}^{\infty} \frac{a_{k}}{k!} ( i t )^{ k } )^{3} - \ldots $ 
-eq 847::  $\forall x, f(x)$ 
-eq 848::  $148 - 141 \neq -4$ 
-eq 849::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 850::  $10^{64}$ 
-eq 851::  $\exists x$ 
-eq 852::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 853::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 854::  $120 - 14 - 107 \leq 213$ 
-eq 855::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 856::  $26 \pm (109 + 119 - 82) \div ((169 - 123) + (20 \div 175))$ 
-eq 857::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 858::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 859::  $\frac{1}{10}$ 
-eq 860::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 823::  $94 + 74 + 6 + 138 > 21$ 
+eq 824::  $ p^{3} - ( x^{2} + x y + y^{2} ) p^{2} + ( x^{3} y + x^{2} y^{2} +x y^{3} ) p - x^{3} y^{3} = 0 $ 
+eq 825::  $(47 \times 111) + 85 \geq 5301$ 
+eq 826::  $3a + 2 \leq 5$ 
+eq 827::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 828::  \log_{2} 8 = 3 
+eq 829::  $x^2 - x - 1 = 0$ 
+eq 830::  $((56 \times 52) \div 135) + (34 - (74 \times 92)) \geq -6752$ 
+eq 831::  $dx^3+(4e-c^2)x^2-2cdx-d^2 = 0$ 
+eq 832::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 833::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 834::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
+eq 835::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 836::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 837::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 838::  x^{2} + y^{2} \lt 1 
+eq 839::  $2 {k} {\pi}$ 
+eq 840::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 841::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 842::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 843::  $2^5+2+1$ 
+eq 844::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 845::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 846::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 847::  $89 \times ((155 \times 50) \div 132) \neq -1372$ 
+eq 848::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 849::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 850::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 851::  $67 - 132 - 181 - 194 = -52$ 
+eq 852::  $a^2-2ab$ 
+eq 853::  $100 \pm 15 \times 16$ 
+eq 854::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 855::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 856::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 857::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 858::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 859::  $\sqrt{1-z^2}$ 
+eq 860::  $21-5\sqrt{21} + (15\sqrt{7}-21\sqrt{3})i$ 
 eq 861::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 862::  $76 \pm ((41 + 118) \times 124) \times 130$ 
-eq 863::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 864::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 865::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 866::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
-eq 867::  $c = \sqrt{a^2+b^2-2ab\cos\gamma}$ 
-eq 868::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 869::  $2^{69}$ 
-eq 870::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 871::  \tan z = \frac{\sin z}{\cos z} 
-eq 872::  $78 \pm 5 \times 47$ 
-eq 873::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 874::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 875::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
-eq 876::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 877::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
-eq 878::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
-eq 879::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 880::  $y = \frac{1}{x}$ 
-eq 881::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
-eq 882::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 883::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
-eq 884::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 885::  $(47 \times 111) + 85 \geq 5301$ 
-eq 886::  $3a + 2 \leq 5$ 
-eq 887::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 888::  $179 \times ((10 - 77) \times (21 + 102)) \geq -1475139$ 
-eq 889::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 890::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
-eq 891::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 892::  x^{2} + y^{2} \lt 1 
-eq 893::  $151 \pm 143 \div 97$ 
-eq 894::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 895::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 896::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 897::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 898::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 899::  $2^n-1$ 
-eq 900::  $x^3 = 18x + 35$ 
-eq 901::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 902::  \log_{2} 8 = 3 
-eq 903::  $199 - 151 = 48$ 
-eq 904::  $x^2 - x - 1 = 0$ 
-eq 905::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 906::  $x \times (- \infty)$ 
-eq 907::  $3^{n+1} + 2$ 
-eq 908::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 909::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 910::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
-eq 911::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 912::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 913::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 914::  $((56 \times 52) \div 135) + (34 - (74 \times 92)) \geq -6752$ 
-eq 915::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 916::  $x+dx$ 
-eq 917::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 918::  $\theta_2=\theta$ 
-eq 919::  $10x = 3$ 
-eq 920::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 921::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 922::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 923::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 924::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 925::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 926::  $\frac{9}{5}$ 
-eq 927::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 928::  $((126 \div 185) \times (59 + 139)) - 59 > 0$ 
+eq 862::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 863::  $b_{n}-a_{n}$ 
+eq 864::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 865::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 866::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 867::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
+eq 868::  $199 - 151 = 48$ 
+eq 869::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
+eq 870::  e^{i \pi} + 1 = 0 
+eq 871::  F_{n} = F_{n - 1} + F_{n - 2} 
+eq 872::  $(18 + 22) \div 92 \neq 0$ 
+eq 873::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 874::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 875::  $y = \frac{1}{x}$ 
+eq 876::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 877::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 878::  $b=a^2+c^2$ 
+eq 879::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 880::  $(n+3)$ 
+eq 881::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 882::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
+eq 883::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 884::  \sum_{i = 2 n + 3 m}^{1 0} i x 
+eq 885::  $x_4 = -\sqrt{2}$ 
+eq 886::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 887::  \log_{2} 8 = 3 
+eq 888::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 889::  \int_a^b \frac {\sqrt x} 2 d x 
+eq 890::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 891::  $x^5+x+a$ 
+eq 892::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 893::  $((84 / 113) / 51) - 119 = -118.99$ 
+eq 894::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 895::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 896::  $2^{17}$ 
+eq 897::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 898::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 899::  $\forall x, f(x)$ 
+eq 900::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 901::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 902::  $y^2=\frac{x^3}{2a-x}$ 
+eq 903::  $\frac{\beta}{\alpha-1}$ 
+eq 904::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 905::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 906::  $b = \sqrt{2}$ 
+eq 907::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 908::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 909::  \int_a^b \frac {\sqrt x} 2 d x 
+eq 910::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 911::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 912::  F_{n} = F_{n - 1} + F_{n - 2} 
+eq 913::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 914::  $58 + 4 \geq 61$ 
+eq 915::  $\forall x,y$ 
+eq 916::  \tan z = \frac{\sin z}{\cos z} 
+eq 917::  \int_a^b \frac {\sqrt x} 2 d x 
+eq 918::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 919::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 920::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 921::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 922::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 923::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 924::  $\cos(4a) = 8\cos^4(a) - 8\cos^2(a) +1$ 
+eq 925::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 926::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 927::  $179 \times ((10 - 77) \times (21 + 102)) \geq -1475139$ 
+eq 928::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
 eq 929::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 930::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 931::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 932::  F_{n} = F_{n - 1} + F_{n - 2} 
-eq 933::  $n-1$ 
-eq 934::  $175 \times (162 \times 103) \leq 2920050$ 
-eq 935::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 936::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 937::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 938::  $a+c=b$ 
-eq 939::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 940::  $12 \pm ((29 \times 6) + 22) + ((47 \times 133) - (86 - 187))$ 
-eq 941::  $\sqrt{2+\sqrt{2}}$ 
-eq 942::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
-eq 943::  $\sqrt{5+2\sqrt{6} }$ 
-eq 944::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
-eq 945::  F_{n} = F_{n - 1} + F_{n - 2} 
-eq 946::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 947::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 948::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 949::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 930::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 931::  $15 \div ((76 \div 10) + (199 - 89)) > 0$ 
+eq 932::  $y_1(x) = x^2$ 
+eq 933::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 934::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 935::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 936::  $1+2+3+\ldots+(n-1)+n$ 
+eq 937::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 938::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 939::  $\cos(a+b)= \cos(a) \cos(b) -\sin(a) \sin(b)$ 
+eq 940::  x^{2} + y^{2} \lt 1 
+eq 941::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 942::  $7 \pm (111 \div (28 + 23)) \times ((53 + 187) \times (179 \div 147))$ 
+eq 943::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 944::  F_{n} = F_{n - 1} + F_{n - 2} 
+eq 945::  $3 = \sqrt{6+\sqrt{6+\sqrt{6+\sqrt{6+\ldots}}}}$ 
+eq 946::  $78 \pm 5 \times 47$ 
+eq 947::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 948::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
+eq 949::  z_1^2 + 1^z - z_2^2 + 2^z 
 eq 950::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 951::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 952::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 953::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 954::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 955::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 956::  $1 - (-1)^d$ 
-eq 957::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 958::  $ac=1$ 
-eq 959::  $a^2 - 2ab = (a - b)^2 - b^2$ 
-eq 960::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 961::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 962::  $y_1(x) = x^2$ 
-eq 963::  $x_0, y_0, z_0$ 
-eq 964::  $(2-1-1)$ 
-eq 965::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 966::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 967::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 968::  $b = \sqrt{2}$ 
-eq 969::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 970::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 971::  $\frac{(e^{i x} - e^{-i x})}{2} = i \sin(x)$ 
-eq 972::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 973::  $12 \div 75 \geq 0$ 
-eq 974::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 975::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 976::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 977::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 978::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
-eq 979::  $59 + 53 \neq -65$ 
-eq 980::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 981::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
-eq 982::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 983::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 984::  $f(x) = X^2 - 4X - 5$ 
-eq 985::  $((116 - 17) \times (124 - 98)) \div 10 > 205$ 
-eq 986::  $b_0=1$ 
-eq 987::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 988::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 989::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 990::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 991::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 992::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 993::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 994::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 995::  $b=a^2+c^2$ 
-eq 996::  $12 + 138 + 144 + 73 > 45$ 
-eq 997::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 998::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 951::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 952::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 953::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 954::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 955::  \sum_{i = 2 n + 3 m}^{1 0} i x 
+eq 956::  $10x = 3$ 
+eq 957::  \log_{2} 8 = 3 
+eq 958::  e^{i \pi} + 1 = 0 
+eq 959::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 960::  $\frac{1}{-1} = \frac{-1}{1}$ 
+eq 961::  $1 \pm 20 - 173$ 
+eq 962::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 963::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 964::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 965::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 966::  $ax^{2} + 2bx + c = 0$ 
+eq 967::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 968::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 969::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 970::  e^{i \pi} + 1 = 0 
+eq 971::  $120 - 14 - 107 \leq 213$ 
+eq 972::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
+eq 973::  $-2x$ 
+eq 974::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 975::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 976::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 977::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 978::  \tan z = \frac{\sin z}{\cos z} 
+eq 979::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 980::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 981::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 982::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 983::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 984::  \int_a^b \frac {\sqrt x} 2 d x 
+eq 985::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 986::  $ \lim_{n \rightarrow \infty} \frac{1}{n} \sum f ( \frac{r}{n} ) = \int_{0}^{1} f ( x ) dx $ 
+eq 987::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 988::  $((31 \div 52) - (21 \div 120)) \times 102 \geq 42$ 
+eq 989::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 990::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 991::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 992::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
+eq 993::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 994::  $4^2 = 2^4$ 
+eq 995::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 996::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 997::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 998::  x_1 \times x_2 \times x_3 \times x_4 = X 
 eq 999::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 1000::  e^{i \pi} + 1 = 0 
-eq 1001::  $69 + ((112 - 46) / 126) > 61$ 
-eq 1002::  $\frac{x^2+y^2}{a^2}-\frac{z^2}{c^2}-1=0$ 
-eq 1003::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
-eq 1004::  \int_a^b \frac {\sqrt x} 2 d x 
-eq 1005::  \log_{2} 8 = 3 
-eq 1006::  \int_a^b \frac {\sqrt x} 2 d x 
-eq 1007::  $189 \pm 159 \times (50 \times 99)$ 
-eq 1008::  $\sin (a - b) = \sin a \cos b - \cos a \sin b$ 
-eq 1009::  $n^2 - n + 41$ 
-eq 1010::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 1011::  \int_a^b \frac {\sqrt x} 2 d x 
-eq 1012::  $\frac{1}{3}\frac{1}{3}\gamma$ 
-eq 1013::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 1014::  $172 - 111 - 55 - 187 \neq -83$ 
-eq 1015::  \log_{2} 8 = 3 
-eq 1016::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 1017::  $10^{-12}$ 
-eq 1018::  \int_a^b \frac {\sqrt x} 2 d x 
-eq 1019::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 1020::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
-eq 1021::  e^{i \pi} + 1 = 0 
-eq 1022::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 1023::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 1024::  $\exists k, x_k$ 
-eq 1025::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 1026::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 1027::  $2^{17}$ 
-eq 1028::  $y = \frac{1}{x^2 + 1}$ 
-eq 1029::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 1030::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
-eq 1031::  $x - n$ 
-eq 1032::  $n \log_2 n$ 
-eq 1033::  e^{i \pi} + 1 = 0 
-eq 1034::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 1035::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 1036::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 1000::  \sum_{i = 2 n + 3 m}^{1 0} i x 
+eq 1001::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 1002::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
+eq 1003::  $7 \times 154 \neq -1362$ 
+eq 1004::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 1005::  $e^{-1}$ 
+eq 1006::  $(2-1-1)$ 
+eq 1007::  $(29 - 24 + 169) \times 88 \leq -14431$ 
+eq 1008::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 1009::  $y = \frac{1}{x^2 + 1}$ 
+eq 1010::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 1011::  $192 - 166 \neq 12$ 
+eq 1012::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 1013::  $(x + 1) (8x^3 - 4x^2 - 4x + 1)=0$ 
+eq 1014::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 1015::  $\phi(x)$ 
+eq 1016::  $(69 + 177 \times 136) + (117 \div 140) > 5612$ 
+eq 1017::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 1018::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 1019::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 1020::  $n \log_2 n$ 
+eq 1021::  \sin^{2} \theta + \cos^{2} \theta = 1 
+eq 1022::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 1023::  x^{2} + y^{2} \lt 1 
+eq 1024::  $\frac{x^2+y^2}{a^2}-\frac{z^2}{c^2}-1=0$ 
+eq 1025::  $x=\phi_{ki}(z)$ 
+eq 1026::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 1027::  $10^{-12}$ 
+eq 1028::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 1029::  $\sqrt{1+\frac{1}{\sqrt{2}}} +\sqrt{1-\frac{1}{\sqrt{2}}}$ 
+eq 1030::  $x^2+x+1 = 0$ 
+eq 1031::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 1032::  $(a + b)^2 = a^2 + 2ab + b^2$ 
+eq 1033::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 1034::  $r=\sqrt{\theta}$ 
+eq 1035::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 1036::  $\sin(- x) = -\sin(x)$ 
 eq 1037::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 1038::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 1039::  F_{n} = F_{n - 1} + F_{n - 2} 
-eq 1040::  $\theta = \frac {n \times 360} {60 \times 1000}$ 
-eq 1041::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 1042::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
-eq 1043::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 1044::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
-eq 1045::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 1046::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 1047::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
-eq 1048::  $ x^{2} \frac{d^{2} y}{d x^{2}} - 3 x \frac{dy}{dx} + y =\frac{\log x \cdot \sin{\log x} + 1}{x} $ 
-eq 1049::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 1050::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 1051::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 1052::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
-eq 1053::  $42 - 85 - 18 \geq -25$ 
-eq 1054::  $146 \times (101 + 157 - 181) = 11242$ 
-eq 1055::  x^{2} + y^{2} \lt 1 
-eq 1056::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 1057::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 1058::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 1059::  $ y = x p + \sqrt{ b^{2} + a^{2} p^{2} } $ 
-eq 1060::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 1061::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 1062::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 1063::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 1064::  $c(0) = 1$ 
-eq 1065::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 1066::  x_x^x + y_y^y + z_z^z - x - y - z 
-eq 1067::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 1068::  $b_{n}-a_{n}$ 
-eq 1069::  $n\times d$ 
-eq 1070::  $30 - 180 + 70 \neq 294$ 
-eq 1071::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 1072::  $c^2 = (a-b)^2+2ab$ 
-eq 1073::  \log_{2} 8 = 3 
-eq 1074::  $0=\frac{d^2 y}{dx^2}$ 
-eq 1075::  $(n+3)$ 
-eq 1076::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 1077::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 1078::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 1079::  $\sqrt{1-z^2}$ 
-eq 1080::  \sum_{i = 2 n + 3 m}^{1 0} i x 
-eq 1081::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 1082::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 1083::  $x=\beta_{3}y_{3}+\ldots+\beta_{n+1}y_{n+1}$ 
-eq 1084::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 1085::  $((98 + 150) + (76 \div 16)) + ((97 \div 92) \times 151) \neq 326$ 
-eq 1086::  $8y_{i+1}$ 
-eq 1087::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 1088::  $x_4 = -\sqrt{2}$ 
-eq 1089::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
-eq 1090::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
-eq 1091::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 1092::  $\frac{\sqrt{3}}{4}$ 
-eq 1093::  $\frac{n(n+1)}{2}+\frac{n(n-1)}{2}$ 
-eq 1094::  x_1 \times x_2 \times x_3 \times x_4 = X 
-eq 1095::  \int_a^b \frac {\sqrt x} 2 d x 
-eq 1096::  $a_{n}=n^{-\beta}$ 
-eq 1097::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 1098::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
-eq 1099::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 1100::  $x=\phi_{ki}(z)$ 
-eq 1101::  $k_n=1$ 
-eq 1102::  $(18 + 22) \div 92 \neq 0$ 
-eq 1103::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 1104::  $\phi(x)$ 
-eq 1105::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 1106::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
-eq 1107::  $\cos(a+b)= \cos(a) \cos(b) -\sin(a) \sin(b)$ 
-eq 1108::  z_1^2 + 1^z - z_2^2 + 2^z 
-eq 1109::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 1110::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 1111::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
-eq 1112::  $Y = g(X) = \frac{1}{X}$ 
-eq 1113::  \sin^{2} \theta + \cos^{2} \theta = 1 
-eq 1114::  $0 \pm 52 \times (169 + 196 - 58)$ 
-eq 1115::  $x^{-4}$ 
-eq 1116::  $c_1=a_{11}$ 
+eq 1038::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 1039::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 1040::  e^{i \pi} + 1 = 0 
+eq 1041::  $2^{18}$ 
+eq 1042::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 1043::  \int_a^b \frac {\sqrt x} 2 d x 
+eq 1044::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 1045::  F_{n} = F_{n - 1} + F_{n - 2} 
+eq 1046::  $x^n=z$ 
+eq 1047::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 1048::  $\cos(2x)=\cos^2(x)-\sin^2(x)$ 
+eq 1049::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
+eq 1050::  \log_{2} 8 = 3 
+eq 1051::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 1052::  $b_0=1$ 
+eq 1053::  $e = 2$ 
+eq 1054::  \tan z = \frac{\sin z}{\cos z} 
+eq 1055::  $b \neq 0$ 
+eq 1056::  $\frac{n(n+1)}{2}+\frac{n(n-1)}{2}$ 
+eq 1057::  $\frac{1}{500}$ 
+eq 1058::  $m_1, m_2, m_3$ 
+eq 1059::  $((138 + 42) \div 93) + (73 + 141 + 169) > 346$ 
+eq 1060::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 1061::  \sum_{i = 2 n + 3 m}^{1 0} i x 
+eq 1062::  $x - n$ 
+eq 1063::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 1064::  $\frac{2}{3}n^3$ 
+eq 1065::  \int_a^b \frac {\sqrt x} 2 d x 
+eq 1066::  $\sin^2(x)$ 
+eq 1067::  $(51 - 53 + 31) - ((186 \times 21) \times (161 \div 103)) \neq -8248$ 
+eq 1068::  \sum_{i = 2 n + 3 m}^{1 0} i x 
+eq 1069::  $0 \pm 145 - 35$ 
+eq 1070::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 1071::  $ z_{1} = r_{1} ( \cos \theta_{1} + i \sin \theta_{1} ) $ 
+eq 1072::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 1073::  $\gamma = 1 + \frac{1}{n}$ 
+eq 1074::  $\forall x \in X$ 
+eq 1075::  \lim_{x \rightarrow \infty} \int_0^x e^{- y^2} d y = \frac {\sqrt \pi} 2 
+eq 1076::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 1077::  $y= y_0+t^mY$ 
+eq 1078::  $\sqrt{2+\sqrt{2}}$ 
+eq 1079::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 1080::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
+eq 1081::  e = \sum^{\infty}_{k = 0} \frac{1}{k !} 
+eq 1082::  \pi \int_c^d \{ g ( y ) \}^2 d y 
+eq 1083::  $Y = g(X) = \frac{1}{X}$ 
+eq 1084::  a \left( n \right) = \sum^{n}_{k = 1} \left( - 1 \right)^{n - k} k ! 
+eq 1085::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 1086::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 1087::  x^{2} + y^{2} \lt 1 
+eq 1088::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 1089::  $\cos (a + b) = \cos a \cos b - \sin a \sin b$ 
+eq 1090::  \log_2 \frac 1 2 + \log_4 \frac 2 4 
+eq 1091::  $\frac{1}{\log_a(b)}$ 
+eq 1092::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 1093::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 1094::  $n-1$ 
+eq 1095::  $2^{n(n - 1)}$ 
+eq 1096::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 1097::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 1098::  \sum_{i = 2 n + 3 m}^{1 0} i x 
+eq 1099::  $x^3 + 3x^2\sqrt{3} - 3x - \sqrt{3}$ 
+eq 1100::  \int_a^b \frac {\sqrt x} 2 d x 
+eq 1101::  x_1 \times x_2 \times x_3 \times x_4 = X 
+eq 1102::  \frac 2 {\frac {3 m - 2 n \times 9^n - 9^m} {2 n - 1}} 
+eq 1103::  \int_{\log 3}^0 \frac 1 {e^t + 1} d t 
+eq 1104::  $x^3 = 18x + 35$ 
+eq 1105::  $y=x^{n}$ 
+eq 1106::  $n^2 - n + 41$ 
+eq 1107::  A = \sqrt {a + \frac 1 {\sqrt {a + \frac 1 {\sqrt a}}}} + \sqrt b 
+eq 1108::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 1109::  z_1^2 + 1^z - z_2^2 + 2^z 
+eq 1110::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
+eq 1111::  $\gamma_{jk}$ 
+eq 1112::  x = \frac{- b \pm \sqrt{b^{2} - 4 a c}}{2 a} 
+eq 1113::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 1114::  \tan z = \frac{\sin z}{\cos z} 
+eq 1115::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 1116::  $x^2 - dy^2 =\pm 1$ 
 eq 1117::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
-eq 1118::  \left( z^{\frac{n}{2}} + y^{\frac{n}{2}} \right) \left( z^{\frac{n}{2}} - y^{\frac{n}{2}} \right) = x 
-eq 1119::  \pi \int_c^d \{ g ( y ) \}^2 d y 
-eq 1120::  A = \sqrt{a + \frac{1}{\sqrt{a + \frac{1}{\sqrt{a}}}}} + \sqrt{b} 
-eq 1121::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
-eq 1122::  $ z_{1} = r_{1} ( \cos \theta_{1} + i \sin \theta_{1} ) $ 
-eq 1123::  \log_{2} 8 = 3 
-eq 1124::  $2^{n(n - 1)}$ 
-eq 1125::  $f+g$ 
-eq 1126::  $\frac{b-a}{n}\leq\alpha$ 
-eq 1127::  $3n-5$ 
-eq 1128::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 1118::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 1119::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 1120::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 1121::  $\sqrt{1+x}$ 
+eq 1122::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 1123::  [ \frac 2 3 x^{\frac 3 2} ]_0^1 
+eq 1124::  x_x^x + y_y^y + z_z^z - x - y - z 
+eq 1125::  [ b^x \{ ( \frac a b )^x + 1 \} ]^{\frac 1 x} 
+eq 1126::  \sqrt {1 + \sqrt {2 + \sqrt {3 + \sqrt 4}}} 
+eq 1127::  $x_2 = \frac{-1+i\sqrt{7}}{2}$ 
+eq 1128::  $a^2 - 2ab = (a - b)^2 - b^2$ 

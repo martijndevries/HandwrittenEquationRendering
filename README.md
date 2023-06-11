@@ -43,17 +43,21 @@ This repository consists of the following:
 </ul>
 
 
-## Data Overview
+## Data Overview and Processing
 
 
 The CROHME (Competition for Recognition of Handwritten Mathematical Expressions) dataset was created over the course of several years as part of a Handwriting Recognition conference. More information on the dataset can be found <a href=https://www.isical.ac.in/~crohme/CROHME_data.html>here</a>. The data itself was obtained from <a href=https://www.kaggle.com/datasets/rtatman/handwritten-mathematical-expressions>Kaggle</a>. For storage space reasons, the data is not included in this repository, and needs to be downloaded separately.
 
-The data is in 'inkML' format. Each inkML file contains coordinate lists, which outline handwritten traces of symbols. Each trace, or stroke, is a separate entry, and symbols might consist of multiple traces. There is also a 'traceGroup' property, which shows which traces together form a symbol. Additionally, the label of individual symbols, as well as the full equation shown in the image, is included.
+The data is contained in a special 'inkML' format. Each inkML file contains coordinate lists, which outline handwritten traces of symbols. Each trace, or stroke, is a separate entry, and symbols might consist of multiple traces. There is also a 'traceGroup' property, which shows which traces together form a symbol. Additionally, the label of individual symbols, as well as the full equation shown in the image, is included.
 
 In the data processing notebook. I read in the inkML training data files from the 2011-2013 competitions. The majority of the data is written out as small images of individual symbols, which are used to train the model. About a 1000 equation files are saved as full equation images, which are used to evaluate the performance of the full pipeline. An example of an inkML file, with all traces plotted in individual colors, is shown below.
 
  <img src="./figures/inkml_example.png" height="250px"/>
+ 
+In order to train the model, images of individual symbols are created from the inkML files, using matplotlib, and written out into separate directories. Additionally,  about 10% of the inkML files are held back in order to evaluate the overall performance of the equation rendering pipeline. 
 
+For the individual symbol images, a random value for the linewidth is generated for each symbol when the images are created. This is done so that the CNN can recognize symbols drawn at different linewidths.
+ 
 
 ## Pipeline Summary
 
@@ -69,7 +73,7 @@ A high-level overview of each step is given below. More detail on the exact step
 
 ### 1) Resolving symbols
 
-As a first step, when the image is uploaded it is thresholded towards black and white values. For the inkML equation files, this is trivial as they were created digitally. However, the tool should also be able to handle real-world pictures with imperfections and shadows. For those images, a three-step process is applied: firstly, the images is tresholded with adaptive gaussian tresholding. This process often will still result in small-scale features on the image that we would like to remove. To remove these features, a Gaussian blurring, and then a second, binary tresholding is applied to remove these small-scale features (more information on tresholding in openCV can be found <a href=https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html>here</a>).
+As a first step, when the image is uploaded it is thresholded towards black and white values. For the inkML files, this is somewhat trivial as the images were created digitally. However, the tool should also be able to handle real-world pictures with imperfections and shadows. For those images, a three-step process is applied: firstly, the images is tresholded with adaptive gaussian tresholding. This process often will still result in small-scale features on the image that we would like to remove. To remove these features, a Gaussian blurring, and then a second, binary tresholding is applied to remove these small-scale features (more information on tresholding in openCV can be found <a href=https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html>here</a>).
 
 Next, the symbols are detected with openCVs <a href=https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a>findContours()</a> function. In order to further ignore small imperfections on the image, only contours with bounding boxes above a certain size (relative to the total image size) are considered. An example of a thresholded image (an equation handwritten by me), with the bounding boxes from findContours() overlayed, is shown below.
 
@@ -119,3 +123,15 @@ The distance metric I've decided to use is the <a href=https://en.wikipedia.org/
 The actual LaTeX string contains symbols like \\sin and \\theta, which should be counted the same as one-character symbols like 1 or 2. Therefore, I 're-label' the equations, changing out each symbol for ASCII characters, before computing the metric. 'Structural' parts of the equation string, like curly brackets or sub and superscript characters (like ^ and \_) which do not arise from the symbol prediction but are added in the postprocessing step, are also included in the distance metric calculation.
 
 ## Overall Conclusions
+
+Although this Handwritten equation tool serves as an important step in the right direction, the current iteration is only able to render a handwritten equation with perfect accuracy for about 1 in 6 equations of the testing data. 
+
+Generally speaking, it is clear that math equations are difficult to render accurately because the symbols are not read in simply left-to-right but depend on each other in some way depending on their position in the equation. The large variety of symbols, and (in principle) arbitrarily large complexity of an equation, makes it very difficult for this tool to account for all possible scenarios. 
+
+Despite these challenges, with more work this tool could be improved. A few areas of improvement are listed below:
+
+<ol>
+    <li> <b> Model Training: </b> Overall, it appears that the accuracy of individual symbol predictions is not as high as the 95% seen on the validation data during the training. This is likely related to the the fact that the individual symbol images are all created in the same manner. Training the model on images that are more blurry or sharp, or more varied in linewidth, might make the model more robust. Given the relatively long training times of the EfficientNet CNN, finding the configuration that leads to the best prediction is a time consuming process. </li>
+    <li> <b> Script level: </b> The script level part of the pre-processing pipeline is somewhat heuristic, and does not always do a good job at correctly labeling the script level. A noteable example is subscripts following symbols such as y and g, which extend below the handwriting baseline - in that case, the bounding box of the subscript typically does not extend the preceding box, and is not identified as subscript. For the script level labeling to be reliable, more work needs to be done at understanding the difference between different script levels. Making the labeling depend on not just the relationship to the preceding symbol, but several symbols on the same level, would also improve this step. </li>
+    <li> <b> Multi-character symbols: </b> Because of the findContours() function, the tool often has trouble identifying symbols such as $\sin$, $\cos$ or $\lim$, as these are often not handwritten together. Additionally, sometimes symbols like $x$ or $k$ are identified as two separate contours because the individual traces do not touch each other. More work is needed in the pre-processing pipeline to do this correctly. To some extent, I tried to correct for this in the post-processing - eg. if there are three adjacent symbols such as $s$, $i$, and $n$, these are replaced by a single $\sin$. But ideally, this would be fixed in pre-processing. One potential solution would be incorporating some iterative functionality in the pre-processing, where 'test' predictions are made such that better inferences could be made about the way the equation should be structured. </li>
+</ol>

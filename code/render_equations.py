@@ -263,6 +263,12 @@ def render_equation(symbol_list, levels, stack, script_levels, extend_list):
     close_c = eq_string.count('}')
     if open_c - close_c > 0:
         eq_string += '}' * (open_c - close_c)
+        
+    #if there is a \frac{-}(-} in the equation, replace with \\div
+    if '\\frac{ -}{ -}' in eq_string:
+        eq_string = eq_string.replace('\\frac{ -}{ -}', '\\div')
+        
+        
                               
     eq_string += '$'
     
