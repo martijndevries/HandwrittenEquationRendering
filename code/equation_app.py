@@ -57,15 +57,15 @@ st.title("Handwritten Equation Recognition")
 
 st.subheader("Upload an image of a handwritten equation below:")
 #user input of an image
-input_img = st.file_uploader(label='bla',type=['png', 'jpg'], label_visibility='hidden')
+input_img = st.file_uploader(label='bla',type=['png', 'jpg', 'jpeg'], label_visibility='hidden')
 
 #class labels
-with open('../class_names.txt', 'r') as f:
+with open('../CNN_model/class_names.txt', 'r') as f:
     lines = f.readlines()
 class_labels = [label.split(' ')[-1][:-1] for label in lines]
 
 #load model
-efficientnet_model = tf.keras.models.load_model("../CNN_model/efficientnet_model_lw2.h5")
+efficientnet_model = tf.keras.models.load_model("../CNN_model/efficientnet_model_lw.h5")
 
 #call preprocessing
 if input_img is not None:
@@ -86,4 +86,4 @@ if input_img is not None:
     
     st.markdown('<p class="big-font"> Predicted equation: </p>', unsafe_allow_html=True)
     st.write("Rendered in LaTeX:  " r'' + eqstr)
-    st.text("Raw string: " +  eqstr)
+    st.text("Raw string: " +  eqstr.replace(" ",""))

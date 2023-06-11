@@ -36,8 +36,11 @@ This repository consists of the following:
        <li> The file <b>box_positions.py</b> contains the BoxPositions class, which is used in the pre-processing pipeline to compare the bounding boxes of symbols in various ways </li>
     <li>The file <b>resolve_symbols.py</b> contains the code for the pre-processing step </li>
     <li> The file <b>render_equations.py </b>contains most of the code for the post-processing step </li>
-    </ol>  </li>
-    <li> The directory <code>./CNN_model/</code> contains the trained efficientNetB0 model, used to make predictions on images of individual symbols </li>
+    </ol>
+      Finally, the file equation_app.py contains a streamlit application that runs the code
+</li>
+    <li> The directory <code>./CNN_model/</code> contains the trained efficientNetB0 model, used to make predictions on images of individual symbols, as well as a txt file with all the class labels in order </li>
+       <li> The directory <code>./img_data/</code> is used for the image data that the model is trained on and that the pipeline is evaluated on. Because of storage space, only 3 handwritten equations by me are included, in <code>./img_data/handwritten/</code>. The other files are created in the data processing notebook </li>
    <li> The directory <code>./figures</code> contains all the figures that are saved during the analysis in the notebooks, in .png formats </li>
     <li> The slides for the project presentation are in the file <code>equation_rendering_slides.pdf</code> </li>
 </ul>
@@ -114,6 +117,13 @@ After the predictions have been made, the individual labels need to be stitched 
     <li> If one of the predicted symbols was a root sign, figure out when to close out that root sign </li>
 </ol>
 
+Two examples of an equation prediction, one perfect one and one not-as-good one, are shown below:
+
+ <img src="./figures/perfect_prediction.png" height="250px"/>
+
+ <img src="./figures/imperfect_prediction.png" height="250px"/>
+
+
 
 ## Evaluating the full pipeline performance
 
@@ -122,9 +132,16 @@ The distance metric I've decided to use is the <a href=https://en.wikipedia.org/
 
 The actual LaTeX string contains symbols like \\sin and \\theta, which should be counted the same as one-character symbols like 1 or 2. Therefore, I 're-label' the equations, changing out each symbol for ASCII characters, before computing the metric. 'Structural' parts of the equation string, like curly brackets or sub and superscript characters (like ^ and \_) which do not arise from the symbol prediction but are added in the postprocessing step, are also included in the distance metric calculation.
 
+The image below shows the overal performance in terms of the normalized Damerau-Levenshtein distance. A distance of zero means that the equation was perfectly rendered. A distance of 0.5 means that only half of the symbols in the predicted equation were in the right location. Furthermore, we also split the evaluation up in three kinds of equations: equations with lim or sum signs, equations with trigonometric symbols, and all other equations
+
+ <img src="./figures/model_performance.png" height="250px"/>
+ 
+ For all equations, we make a perfect prediction around $15.7\%$ of the time, and put at least half of the symbols in the right spot around $65.9\%$.
+
+
 ## Overall Conclusions
 
-Although this Handwritten equation tool serves as an important step in the right direction, the current iteration is only able to render a handwritten equation with perfect accuracy for about 1 in 6 equations of the testing data. 
+Although this Handwritten equation tool serves as an important step in the right direction, the current iteration is only able to render a handwritten equation with perfect accuracy for about $15\%$ equations of the testing data. 
 
 Generally speaking, it is clear that math equations are difficult to render accurately because the symbols are not read in simply left-to-right but depend on each other in some way depending on their position in the equation. The large variety of symbols, and (in principle) arbitrarily large complexity of an equation, makes it very difficult for this tool to account for all possible scenarios. 
 

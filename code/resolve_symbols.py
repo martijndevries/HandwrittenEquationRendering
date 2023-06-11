@@ -483,7 +483,7 @@ def resolve_symbols_on_img(img_file, plot=True):
      
         
         #only include boxes that are a certain % of the total image area
-        if x2*y2 > 2e-4 *img_size and ctr_ar > 0:
+        if x2*y2 > 2.2e-4 *img_size and ctr_ar > 0:
             box_list.append([x1, y1, x2+x1, y2+y1])
     
     #step 2) find which boxes should be merged, and remove the individual boxes
