@@ -134,9 +134,9 @@ The actual LaTeX string contains symbols like \\sin and \\theta, which should be
 
 The image below shows the overal performance in terms of the normalized Damerau-Levenshtein distance. A distance of zero means that the equation was perfectly rendered. A distance of 0.5 means that only half of the symbols in the predicted equation were in the right location. Furthermore, we also split the evaluation up in three kinds of equations: equations with lim or sum signs, equations with trigonometric symbols, and all other equations
 
- <img src="./figures/model_performance.png" height="250px"/>
+ <img src="./figures/model_performance.png" height="450px"/>
  
- For all equations, we make a perfect prediction around $15.7\%$ of the time, and put at least half of the symbols in the right spot around $65.9\%$.
+ For all equations, we make a perfect prediction around $15.7\%$ of the time, and put at least half of the symbols in the right spot of the time $65.9\%.
 
 
 ## Overall Conclusions
