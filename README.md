@@ -15,7 +15,7 @@ To run the code in this repository, I have used the following python libraries
     <li> Matplotlib version 3.7.1 </li>
     <li> OpenCV (or cv2) version 4.7.0 </li>
     <li> Jellyfish version 0.11.2 </li>
-    <li> Tensorflow version 2.10.0. <b>Note:</b> In order to save the efficientnet model using tensorflows model.save() function, I had to edit some code in the package folder. It appears that efficientNet does save with no issues on Tensorflow 2.9 or lower</li>
+    <li> Tensorflow version 2.10.0. <b>Note:</b> In order to save the efficientnet model using tensorflows model.save() function, I had to edit some code in the package folder. It appears that efficientNet does save with no issues on Tensorflow 2.9 or lower. The trained model is also included in this repository. </li>
 </ul>
 
 ## Repository Overview
@@ -31,18 +31,18 @@ This repository consists of the following:
     <li> In <b>CNN_training.ipynb</b>, I load in the image data of individua models an train an efficientNetB0 model to classify individual symbols </li>
     <li> In <b> equation_rendering.ipynb</b>, I develop the final step of the pipeline to turn a list of predictions into an equation </li>
      </ol>
-     Additionally, there are 3 .py files that helper functions that contain the majority of the pre and post-processing code:
+     Additionally, there are 3 .py files with helper functions that contain the majority of the pre and post-processing code:
      <ol>
        <li> The file <b>box_positions.py</b> contains the BoxPositions class, which is used in the pre-processing pipeline to compare the bounding boxes of symbols in various ways </li>
     <li>The file <b>resolve_symbols.py</b> contains the code for the pre-processing step </li>
     <li> The file <b>render_equations.py </b>contains most of the code for the post-processing step </li>
     </ol>
-      Finally, the file equation_app.py contains a streamlit application that runs the code
+      Finally, the file equation_app.py contains a streamlit application that runs the full pipeline.
 </li>
     <li> The directory <code>./CNN_model/</code> contains the trained efficientNetB0 model, used to make predictions on images of individual symbols, as well as a txt file with all the class labels in order </li>
        <li> The directory <code>./img_data/</code> is used for the image data that the model is trained on and that the pipeline is evaluated on. Because of storage space, only 3 handwritten equations by me are included, in <code>./img_data/handwritten/</code>. The other files and directories are created in the data processing notebook </li>
    <li> The directory <code>./figures</code> contains all the figures that are saved during the analysis in the notebooks, in .png formats </li>
-    <li> The slides for the project presentation are in the file <code>equation_rendering_slides.pdf</code> </li>
+    <li> The slides for the project presentation are in <code>equation_rendering_slides.pdf</code> </li>
 </ul>
 
 
@@ -136,7 +136,7 @@ The image below shows the overal performance in terms of the normalized Damerau-
 
  <img src="./figures/model_performance.png" height="450px"/>
  
- For all equations, we make a perfect prediction around $15.7\%$ of the time, and put at least half of the symbols in the right spot of the time $65.9\%.
+ For all equations, we make a perfect prediction around $15.7\%$ of the time, and put at least half of the symbols in the right spot $65.9\% of the time.
 
 
 ## Overall Conclusions
