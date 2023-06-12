@@ -40,7 +40,7 @@ This repository consists of the following:
       Finally, the file equation_app.py contains a streamlit application that runs the code
 </li>
     <li> The directory <code>./CNN_model/</code> contains the trained efficientNetB0 model, used to make predictions on images of individual symbols, as well as a txt file with all the class labels in order </li>
-       <li> The directory <code>./img_data/</code> is used for the image data that the model is trained on and that the pipeline is evaluated on. Because of storage space, only 3 handwritten equations by me are included, in <code>./img_data/handwritten/</code>. The other files are created in the data processing notebook </li>
+       <li> The directory <code>./img_data/</code> is used for the image data that the model is trained on and that the pipeline is evaluated on. Because of storage space, only 3 handwritten equations by me are included, in <code>./img_data/handwritten/</code>. The other files and directories are created in the data processing notebook </li>
    <li> The directory <code>./figures</code> contains all the figures that are saved during the analysis in the notebooks, in .png formats </li>
     <li> The slides for the project presentation are in the file <code>equation_rendering_slides.pdf</code> </li>
 </ul>
@@ -141,7 +141,7 @@ The image below shows the overal performance in terms of the normalized Damerau-
 
 ## Overall Conclusions
 
-Although this Handwritten equation tool serves as an important step in the right direction, the current iteration is only able to render a handwritten equation with perfect accuracy for about $15\%$ equations of the testing data. 
+Although this Handwritten equation tool serves as an important step in the right direction, the current iteration is only able to render a handwritten equation with perfect accuracy for about $16\%$ equations of the testing data. 
 
 Generally speaking, it is clear that math equations are difficult to render accurately because the symbols are not read in simply left-to-right but depend on each other in some way depending on their position in the equation. The large variety of symbols, and (in principle) arbitrarily large complexity of an equation, makes it very difficult for this tool to account for all possible scenarios. 
 

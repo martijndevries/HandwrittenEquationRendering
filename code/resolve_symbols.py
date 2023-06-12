@@ -461,7 +461,7 @@ def resolve_symbols_on_img(img_file, plot=True):
     else:
         thresh  = cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY,11,2)
         blur = cv2.GaussianBlur(thresh,(13,13),0)
-        bt = np.percentile(blur, 1.4)
+        bt = 140
         ret,thresh=cv2.threshold(blur,bt, 255, cv2.THRESH_BINARY)
 
     ctrs, ret =cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)

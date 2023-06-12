@@ -85,5 +85,7 @@ if input_img is not None:
     
     
     st.markdown('<p class="big-font"> Predicted equation: </p>', unsafe_allow_html=True)
-    st.write("Rendered in LaTeX:  " r'' + eqstr)
+    
     st.text("Raw string: " +  eqstr.replace(" ",""))
+
+    st.write("Rendered in LaTeX:  " r'' + eqstr)
