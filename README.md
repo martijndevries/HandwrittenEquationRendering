@@ -55,7 +55,7 @@ The data is contained in a special 'inkML' format. Each inkML file contains coor
 
 In the data processing notebook. I read in the inkML training data files from the 2011-2013 competitions. The majority of the data is written out as small images of individual symbols, which are used to train the model. About a 1000 equation files are saved as full equation images, which are used to evaluate the performance of the full pipeline. An example of an inkML file, with all traces plotted in individual colors, is shown below.
 
- <img src="./figures/inkml_example.png" height="250px"/>
+ <img src="./figures/inkml_example.png" height="450px"/>
  
 In order to train the model, images of individual symbols are created from the inkML files, using matplotlib, and written out into separate directories. Additionally,  about 10% of the inkML files are held back in order to evaluate the overall performance of the equation rendering pipeline. 
 
@@ -80,11 +80,11 @@ As a first step, when the image is uploaded it is thresholded towards black and 
 
 Next, the symbols are detected with openCVs <a href=https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a>findContours()</a> function. In order to further ignore small imperfections on the image, only contours with bounding boxes above a certain size (relative to the total image size) are considered. An example of a thresholded image (an equation handwritten by me), with the bounding boxes from findContours() overlayed, is shown below.
 
- <img src="./figures/contours_example.png" height="250px"/>
+ <img src="./figures/contours_example.png" height="450px"/>
 
-There are a few crucial steps that the pre-processing pipeline needs to take before individual symbols can be fed to the model for prediction: for example, some boxes bound inner contours,  which should not be included. Additionally, some boxes are actually part of a single symbol, like in the 'equals' sign. Additionally, we need to know the order of the symbols, as well as additional information how they relate to other symbols in the equation: are they in a fraction, are they subscripts or superscript? Are they below a limit sign or above a summation sign? The pre-processing pipeline tries to take care of each of these things, primarily by making informed guessess about symbols using the relative locations of the boxes on the image. An example of the same image after pre-processing is shown below:
+There are a few crucial steps that the pre-processing pipeline needs to take before individual symbols can be fed to the model for prediction: for example, some boxes bound inner contours,  which should not be included. Additionally, some boxes are actually part of a single symbol, like in the 'equals' sign. Additionally, we need to know the order of the symbols, as well as additional information how they relate to other symbols in the equation: are they in a fraction, are they subscripts or superscript? Are they below a limit sign or above a summation sign? The pre-processing pipeline tries to take care of each of these things, primarily by making informed guessess about symbols using the relative locations of the boxes on the image. An example of the same image after pre-processing is shown below:1
 
- <img src="./figures/preprocessed_example.png" height="250px"/>
+ <img src="./figures/preprocessed_example.png" height="450px"/>
  
  The pre-processing pipeline has correctly figured out: 1) which boxes are inner contours, and removed them, 2) that the 'equals' sign and the factorial should be considered single symbols, 3) the order the symbols should be read in, 4) the fact that the symbols in the 'limit' sign and within the fraction are related to eachother, in what I refer to as a  'stack', and 5) which symbols are superscripts. 
  
@@ -119,9 +119,9 @@ After the predictions have been made, the individual labels need to be stitched 
 
 Two examples of an equation prediction, one perfect one and one not-as-good one, are shown below:
 
- <img src="./figures/perfect_prediction.png" height="250px"/>
+ <img src="./figures/perfect_prediction.png" height="450px"/>
 
- <img src="./figures/imperfect_prediction.png" height="250px"/>
+ <img src="./figures/imperfect_prediction.png" height="450px"/>
 
 
 
