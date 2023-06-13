@@ -56,6 +56,11 @@ st.markdown("""
 st.title("Handwritten Equation Recognition")
 
 st.subheader("Upload an image of a handwritten equation below:")
+
+#sidebar
+st.sidebar.markdown("## Controls")
+st.sidebar.markdown("You can **change** the values to change the *chart*.")
+
 #user input of an image
 input_img = st.file_uploader(label='bla',type=['png', 'jpg', 'jpeg'], label_visibility='hidden')
 
