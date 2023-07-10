@@ -19,6 +19,11 @@ def find_boxes_to_merge(boxl, img_ysize):
     For a list of boxes that are overlapping in x-coordinates, check which box is the closest in distance either above or below the box
     If a box on either side matches certain criteria about the x and ylengths, assume it's two components of an equals sign or ! or i, etc.
     And return the coordinates of the two boxes that should be merged
+    Input:
+        1) boxl (list) - list of box coordinates, in the form [x1, y1, x2, y2]
+        2) img_ysize (int)
+    Returns:
+        1) list of boxes to be merged. If no merge was found, list will contain a single entry
     """
     
     box_0 = boxl[0]
