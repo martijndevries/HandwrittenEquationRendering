@@ -1,4 +1,4 @@
-# Capstone Project - Rendering Handwritten Equations
+# Rendering Handwritten Equations
 
 By Martijn de Vries <br>
 martijndevries91@gmail.com

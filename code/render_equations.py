@@ -1,11 +1,23 @@
 import numpy as np
-
-
+"""
+This file contains postprocessing functions
+"""
 
 def turn_into_stack_LOLs(symbol_list, levels, stack, script_levels, extend_list):
     """
-    Turn the list of symbols, and script levels into list of lists
-    Where each list only contains those entries that are at the same level
+    Turn the list of symbols, and script levels into list of lists, where each list only contains those entries that are at the same level
+    Parameters:
+        1) symbol_list (list) - predicted labels for each symbol
+        2) levels (list) - level label for each symbol
+        3) stack (list) - stack label for each symbol
+        4) script_levels (list) - script level label for each symbol
+        5) extend_list (list) - extend label for each symbol
+    Returns:
+        1) symbol_lol (list) - list of lists of predicted symbol labels
+        2) level_lol (list) - level label list of lists
+        3) stack_lol (list) - stack label list of lists
+        4) script_lol (list) - script level label list of lists
+        5) extend_lol (list) - extend label list of lists
     """
     
     l_a = np.array(levels)
