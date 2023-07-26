@@ -124,6 +124,9 @@ def above_below_box(box, overlap_boxlist):
     """
     Given a box and the list boxes with overlapping x-coordinates, check if the overlapping boxes are above or below
     (or both) the box.
+    Parameters:
+        1) box (list) - the coordinates of the reference box
+        2) overlap_boxlist (list of list) - list of other boxes that are checked against reference box
     Returns:
         0 if there are boxes below, 1 if there are boxes both above and below, and 2 if there are boxes above
     """
