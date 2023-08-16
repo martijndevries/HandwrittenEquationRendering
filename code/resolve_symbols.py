@@ -152,7 +152,10 @@ def above_below_box(box, overlap_boxlist):
 def scan_x_gaps(box_list):
     """
     Given a list of boxes, find which x-coordinates have no boxes overlapping them
-    Returns: a list of x-coordinates (at intervals of 5 pixels) that have no overlapping boxes
+    Parameters:
+        1) box_list (list of lists) - list of boxes, each a list in itself with the four points of the box as coordinates
+    Returns: 
+        a list of x-coordinates (at intervals of 5 pixels) that have no overlapping boxes
     """
     #get min and max 
     xmins = np.array([box_list[j][0] for j in range(len(box_list))])
